@@ -47,6 +47,10 @@ def read_word_vectors(filename):
 	sys.stderr.write("Vectors read from: "+filename+" \n")
 	return word_vecs
 
+def save_obj(obj, name ):
+    with open(name + '.pkl', 'wb') as f:
+        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
+
 dict_vectors = read_word_vectors("vectors-enwikitext_vivek200.txt")
 name_vector_pair={}
 profession_vector_pair={}
@@ -55,19 +59,16 @@ for name in Read_name_from_profession("profession.train") :
 	name=name.replace(" ","")
 	name=name.lower()
 	name_vector_pair[name] = dict_vectors[name]
-fo1 = open("name_vector.text", 'w')
-json.dump(name_vector_pair, fo1)
+save_obj(name_vector_pair, "name_vector")
 
 # for profession in Read_occupation_from_profession("profession.train"):
 # 	profession=profession.replace(" ","")
 # 	profession=profession.lower()
 # 	profession_vector_pair[profession] = dict_vectors[profession]
-# fo2 = open("profession_vector.text", 'w')
-# json.dump(profession_vector_pair, fo2)
+#save_obj(profession_vector_pair, "profession_vector")
 
 # for nationality in Read_nation_from_nationality("nationality.train"):
 # 	nationality=nationality.replace(" ","")
 # 	nationality=nationality.lower()
 # 	nationality_vector_pair[nationality] = dict_vectors[nationality]
-# fo3 = open("nationality_vector.text", 'w')
-# json.dump(nationality_vector_pair, fo3)
+#save_obj(nationality_vector_pair, "nationality_vector")
