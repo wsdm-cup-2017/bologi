@@ -7,6 +7,7 @@ import math
 import gzip
 import json
 import sys
+import pickle
 
 coding="utf-8"
 #read all names from profession.train
@@ -28,7 +29,7 @@ def Read_occupation_from_profession(path):
 	return job_names
 
 def Read_nation_from_nationality(path):
-	s1 = pd.read_csv(path, names = ['name' , 'nation' , 'score'] , sep = '\t', encoding = 'utf-8')
+	s1 = pandas.read_csv(path, names = ['name' , 'nation' , 'score'] , sep = '\t', encoding = 'utf-8')
 	nation_names = s1.nation
 	nation_names.drop_duplicates(inplace = True)
 	return nation_names
@@ -58,17 +59,20 @@ nationality_vector_pair={}
 for name in Read_name_from_profession("profession.train") :
 	name=name.replace(" ","")
 	name=name.lower()
-	name_vector_pair[name] = dict_vectors[name]
+	if dict_vectors.has_key(name):
+		name_vector_pair[name] = dict_vectors[name]
 save_obj(name_vector_pair, "name_vector")
 
-# for profession in Read_occupation_from_profession("profession.train"):
-# 	profession=profession.replace(" ","")
-# 	profession=profession.lower()
-# 	profession_vector_pair[profession] = dict_vectors[profession]
-#save_obj(profession_vector_pair, "profession_vector")
+for profession in Read_occupation_from_profession("profession.train"):
+	profession=profession.replace(" ","")
+	profession=profession.lower()
+	if dict_vectors.has_key(profession):
+		profession_vector_pair[profession] = dict_vectors[profession]
+save_obj(profession_vector_pair, "profession_vector")
 
-# for nationality in Read_nation_from_nationality("nationality.train"):
-# 	nationality=nationality.replace(" ","")
-# 	nationality=nationality.lower()
-# 	nationality_vector_pair[nationality] = dict_vectors[nationality]
-#save_obj(nationality_vector_pair, "nationality_vector")
+for nationality in Read_nation_from_nationality("nationality.train"):
+	nationality=nationality.replace(" ","")
+	nationality=nationality.lower()
+	if dict_vectors.has_key(nationality):
+		nationality_vector_pair[nationality] = dict_vectors[nationality]
+save_obj(nationality_vector_pair, "nationality_vector")
