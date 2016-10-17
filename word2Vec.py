@@ -56,23 +56,38 @@ dict_vectors = read_word_vectors("vectors-enwikitext_vivek200.txt")
 name_vector_pair={}
 profession_vector_pair={}
 nationality_vector_pair={}
+name_notfound={}
+profession_notfound={}
+nationality_notfound={}
 for name in Read_name_from_profession("profession.train") :
+	name_origin=name
 	name=name.replace(" ","")
 	name=name.lower()
 	if dict_vectors.has_key(name):
 		name_vector_pair[name] = dict_vectors[name]
+	else:
+		name_notfound[name_origin] = name
 save_obj(name_vector_pair, "name_vector")
+save_obj(name_notfound, "name_notfound")
 
 for profession in Read_occupation_from_profession("profession.train"):
+	profession_origin=profession
 	profession=profession.replace(" ","")
 	profession=profession.lower()
 	if dict_vectors.has_key(profession):
 		profession_vector_pair[profession] = dict_vectors[profession]
+	else:
+		profession_notfound[profession_origin] = profession
 save_obj(profession_vector_pair, "profession_vector")
+save_obj(profession_notfound, "profession_notfound")
 
 for nationality in Read_nation_from_nationality("nationality.train"):
+	nationality_origin=nationality
 	nationality=nationality.replace(" ","")
 	nationality=nationality.lower()
 	if dict_vectors.has_key(nationality):
 		nationality_vector_pair[nationality] = dict_vectors[nationality]
+	else:
+		nationality_notfound[nationality_origin] = nationality
 save_obj(nationality_vector_pair, "nationality_vector")
+save_obj(nationality_notfound, "nationality_notfound")
