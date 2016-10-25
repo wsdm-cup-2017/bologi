@@ -19,6 +19,12 @@ def Read_name_from_profession(path):
 	train_names.drop_duplicates(inplace = True)
 	return train_names
 
+def Read_name_from_nationality(path):
+	s1 = pandas.read_csv(path, names = ['name' , 'nationality' , 'score'] , sep = '\t', encoding = 'utf-8')
+	train_names = s1.name
+	train_names.drop_duplicates(inplace = True)
+	return train_names
+
 #read all occupation from profession.train
 #input: path of profession.trains r 
 #output: a Series of jobs
@@ -56,6 +62,8 @@ dict_vectors = read_word_vectors("vectors-enwikitext_vivek200.txt")
 name_vector_pair={}
 profession_vector_pair={}
 nationality_vector_pair={}
+namefromNation_vector_pair={}
+namefromNation_notfound={}
 name_notfound={}
 profession_notfound={}
 nationality_notfound={}
@@ -91,3 +99,14 @@ for nationality in Read_nation_from_nationality("nationality.train"):
 		nationality_notfound[nationality_origin] = nationality
 save_obj(nationality_vector_pair, "nationality_vector")
 save_obj(nationality_notfound, "nationality_notfound")
+
+for name in Read_name_from_nationality("nationality.train"):
+	name_origin=name
+	name=name.replace(" ","")
+	name=name.lower()
+	if dict_vectors.has_key(name):
+		namefromNation_vector_pair[name] = dict_vectors[name]
+	else:
+		namefromNation_notfound[name_origin] = name
+save_obj(namefromNation_vector_pair, "namefromNation_vector")
+save_obj(namefromNation_notfound, "namefromNation_notfound")
