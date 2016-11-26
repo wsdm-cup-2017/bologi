@@ -38,9 +38,9 @@ def read_NameJob_pair_from_profession(path):
 	return pairs
 
 #Find all the names in a sentence
-#input:  be a sentence from wiki
+#input: a sentence from wiki
 #output: a list of raw names eg. [[Brack_Obama|Obama], [Lady_Gaga|gaga]]
-def find_names_in_One_Sentence(sentence):
+def find_names_in_one_sentence(sentence):
 	start_idx 			= 0
 	end_idx	  			= 0
 
