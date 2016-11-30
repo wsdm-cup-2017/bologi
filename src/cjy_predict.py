@@ -12,10 +12,6 @@ import sys
 import os
 import pickle
 
-#tmp for debugging
-# import warnings
-# warnings.filterwarnings("error")
-
 def normalize(s):
     minv=min(s.itervalues())
     maxv=max(s.itervalues())
@@ -54,8 +50,7 @@ def Read_NameNation_pair_from_testfile(path):
 
 def Find_test_sentence_from_wiki(testfile):
 
-    wiki_path		= "wiki-sentences"
-
+    wiki_path	= "wiki-sentences"
     train_names = Read_name_from_profession(testfile)
 #    print ("train name is", train_names)
     #s1 = pd.read_csv(wiki_path, names = ['sentences'] , sep = '\n',engine='python', encoding = 'utf-8')
@@ -190,16 +185,15 @@ def predice_train_file_job_using_dict_helper(prof_path, prof_result_path, name2s
     for index, row in job_Pair.iterrows():
         #!!!SHOULD NOT NEED TO STRIP IF INPUT FORMAT IS CORRECT WITH NO EXTRA SPACE .strip()
         name = row['name']
+        name_key = name.encode("utf-8") # because stored as unicode string before by pandas
+
         job  = row['occupation']
-        if name not in name2sentences:
-            try:
-                print "=> Not Found: [", name,"]"
-            except:
-                print "[ERR] => Not Found: ", name.encode('utf-8'), "\n"
+        if name_key not in name2sentences:
+            # print "=> Not Found: [", name,"]"
             continue
-        else:
-            print "==> :)))) Found: ", name
-        job_score_pairs = Predict_each_job_freq(slices[name],job_table,name2sentences[name])
+        # else:
+        #     print "==> :)))) Found: ", name
+        job_score_pairs = Predict_each_job_freq(slices[name],job_table,name2sentences[name_key])
 
         df_out.loc[i] = [name, job, round(job_score_pairs[job])]
         i+=1
@@ -235,4 +229,4 @@ def predice_train_file_job_using_dict(prof_path, prof_result_path):
       predice_train_file_job_using_dict_helper(prof_path, prof_result_path, name2sentences, df_out)
 
     df_out.set_index(keys = ['name'] , inplace = True)
-    df_out.to_csv(prof_result_path, header=None, sep = '\t')
+    df_out.to_csv(prof_result_path, header=None, sep = '\t', encoding='utf-8')

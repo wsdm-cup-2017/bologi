@@ -34,3 +34,5 @@ vectors-enwikitext_vivek200.zip
 	Vilen K\xc3\xbcnnapu
 - vs. actual string read from tuple:
 	Vilen KÃ¼nnapu
+- >>> "Vilen KÃ¼nnapu".decode("utf-8")
+u'Vilen K\xc3\xbcnnapu'

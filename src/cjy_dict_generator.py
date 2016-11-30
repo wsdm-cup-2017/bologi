@@ -41,6 +41,7 @@ def create_name2sentences_dict_from_wiki(wiki_path, c_lowb, c_highb, should_in_o
               if raw_name[i] == '|':
                 #got cleaned name, break the loop once updated dict
                 c_name = raw_name[0:i].replace("_"," ")
+                print "- Inserted", c_name
                 dict_ret[c_name].add(sentence)
 
                 #tmp for tracking progress
@@ -64,7 +65,7 @@ def load_dict(dict_prefix, lowb, highb):
 
 if __name__=='__main__':
   dict_len = 0
-  wiki_path =  "../data/raw_data/#wiki-sentences"
+  wiki_path =  "../data/raw_data/sample_wiki"#"../data/raw_data/wiki-sentences"
 
   # [Memo] sub-dict len1: 93897; len2: 63948, len3: 50037, len4: 77394, len5: 83419, len6:24056
   # save dicts into several sub-dicts, split based on lower-cased first letter of key
@@ -96,7 +97,7 @@ if __name__=='__main__':
   test code for reloading some sub-dictionary,
   please revise params for load_dict accordingly
   '''
-  # restored_dict = load_dict("./data/intermediate_data/name2sentence/name2sentence_NOT_", chr(intervals[0]), chr(intervals[5]))
+  # restored_dict = load_dict("../data/intermediate_data/name2sentence/name2sentence_NOT_", chr(intervals[0]), chr(intervals[5]))
   # print "restored => name2sentence size", len(restored_dict)#, restored_dict.keys()
   # print restored_dict['Vilen KÃ¼nnapu'], "------------------\n"
   # print restored_dict[ 'Vilen KÃ¼nnapu'.decode("utf-8")], "------------------\n"
