@@ -31,10 +31,10 @@ if __name__=='__main__':
         opath  = outpath +'/' + names[-1]
 #        write_test_sentences_to_file(path)
         if type_name=="profession":
-            # print "before"
+            print "predict profession"
             predice_train_file_job_using_dict(path, opath)
         if type_name== "nationality":
-            print "predict nation laterr"
+            print "predict nationality"
             # TODO: might need to do the similar modification as did to profession
             # Predice_train_file_nation(path, opath)
 

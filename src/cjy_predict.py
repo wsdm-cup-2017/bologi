@@ -12,6 +12,14 @@ import sys
 import os
 import pickle
 
+from collections import OrderedDict, defaultdict
+
+class OrderedDefaultDict(OrderedDict, defaultdict):
+    def __init__(self, default_factory=None, *args, **kwargs):
+        #in python3 you can omit the args to super
+        super(OrderedDefaultDict, self).__init__(*args, **kwargs)
+        self.default_factory = default_factory
+
 def normalize(s):
     minv=min(s.itervalues())
     maxv=max(s.itervalues())
@@ -52,7 +60,7 @@ def Find_test_sentence_from_wiki(testfile):
 
     wiki_path	= "wiki-sentences"
     train_names = Read_name_from_profession(testfile)
-#    print ("train name is", train_names)
+    #print ("train name is", train_names)
     #s1 = pd.read_csv(wiki_path, names = ['sentences'] , sep = '\n',engine='python', encoding = 'utf-8')
     s1 = pd.read_csv(wiki_path, names = ['sentences'] , sep = '\n', encoding = 'utf-8')
     Sentences = s1.sentences
@@ -139,7 +147,7 @@ def Predice_train_file_job(prof_path, prof_result_path):
             continue
         job_score_pairs = Predict_each_job_freq(slices[name],job_table,sentences[name])
 
-        res.loc[i] = [name, job, round(job_score_pairs[job])]
+        res.loc[i] = [name, job, job_score_pairs[job]]
         i+=1
 
     res.set_index(keys = ['name'] , inplace = True)
@@ -162,7 +170,7 @@ def Predice_train_file_nation(nation_path, nation_result_path):
         if name not in sentences.keys(): continue
         job_score_pairs = Predict_each_job_freq(slices[name],nation_table,sentences[name])
 
-        res.loc[i] = [name, job, round(job_score_pairs[job])]
+        res.loc[i] = [name, job, job_score_pairs[job]]
         i+=1
 
 
@@ -172,7 +180,7 @@ def Predice_train_file_nation(nation_path, nation_result_path):
 
 
 # added by cjy 11/23
-def predice_train_file_job_using_dict_helper(prof_path, prof_result_path, name2sentences, df_out):
+def predice_train_file_job_using_dict_helper(prof_path, prof_result_path, name2sentences, dict_triple):
     print "in predice_train_file_job_using_dict"
     job_Pair =  Read_NameJob_pair_from_testfile(prof_path)
     job_table = read_table("../data/intermediate_data/prof_words_table.txt")
@@ -181,7 +189,7 @@ def predice_train_file_job_using_dict_helper(prof_path, prof_result_path, name2s
     # sentences = read_sentence_train("name_sentence_dict.json")
     print "dict: name2sentences loaded"
     slices = Slice_for_each_person(job_Pair)
-    i = df_out.shape[0]
+    # i = df_out.shape[0]
     for index, row in job_Pair.iterrows():
         #!!!SHOULD NOT NEED TO STRIP IF INPUT FORMAT IS CORRECT WITH NO EXTRA SPACE .strip()
         name = row['name']
@@ -194,9 +202,10 @@ def predice_train_file_job_using_dict_helper(prof_path, prof_result_path, name2s
         # else:
         #     print "==> :)))) Found: ", name
         job_score_pairs = Predict_each_job_freq(slices[name],job_table,name2sentences[name_key])
-
-        df_out.loc[i] = [name, job, round(job_score_pairs[job])]
-        i+=1
+        for job, score in job_score_pairs.iteritems():
+            dict_triple[name][job] = score
+        # df_out.loc[i] = [name, job, job_score_pairs[job]]
+        # i+=1
 
     return
 
@@ -210,10 +219,18 @@ def load_dict(dict_prefix, lowb, highb):
     return restored_dict
 
 def predice_train_file_job_using_dict(prof_path, prof_result_path):
-    name2sentences = None
-    print "in predice_train_file_job_using_dict"
+    # dict to store prediction result, while keeping original order w/ input
+    dict_triple = OrderedDefaultDict(OrderedDefaultDict)
     df_out = pd.DataFrame(columns = ['name','job', 'score'])
 
+    # read in pair file, init guess to be 0 !!TODO, May modify to some median number
+    s1 = pd.read_csv(prof_path, names = ['name' , 'occupation' , 'score'] , sep = '\t', encoding = 'utf-8')
+    df_in = DataFrame(s1)
+    for index, row in df_in.iterrows():
+        dict_triple[row['name']][row['occupation']] = 0
+
+    # predict using dictionary to look up for wiki-sentences
+    name2sentences = None
     intervals = [ord('a'), ord('d'), ord('g'), ord('j'), ord('n'), ord('r'), ord('u')]
     for i in range(len(intervals)):
       print i, "==============================>\n"
@@ -226,7 +243,14 @@ def predice_train_file_job_using_dict(prof_path, prof_result_path):
         prefix += "NOT_"
       del name2sentences
       name2sentences = load_dict(prefix, chr(lowb), chr(highb))
-      predice_train_file_job_using_dict_helper(prof_path, prof_result_path, name2sentences, df_out)
+      predice_train_file_job_using_dict_helper(prof_path, prof_result_path, name2sentences, dict_triple)
 
+    # store result to file
+    i = 0
+    for name, job_score_pair in dict_triple.iteritems():
+        for job, score in job_score_pair.iteritems():
+            df_out.loc[i] = [name, job, score]
+            i += 1
+    df_out[['score']] = df_out[['score']].astype(int)
     df_out.set_index(keys = ['name'] , inplace = True)
     df_out.to_csv(prof_result_path, header=None, sep = '\t', encoding='utf-8')

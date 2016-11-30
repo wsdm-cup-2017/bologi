@@ -36,3 +36,5 @@ vectors-enwikitext_vivek200.zip
 	Vilen KÃ¼nnapu
 - >>> "Vilen KÃ¼nnapu".decode("utf-8")
 u'Vilen K\xc3\xbcnnapu'
+
+key is 'Vilen K\xc3\x83\xc2\xbcnnapu'
