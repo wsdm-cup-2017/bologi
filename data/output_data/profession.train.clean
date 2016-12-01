@@ -1,0 +1,515 @@
+Barack Obama	Politician	7
+Barack Obama	Lawyer	2
+Barack Obama	Law professor	2
+Barack Obama	Author	0
+William Shakespeare	Poet	7
+William Shakespeare	Playwright	6
+William Shakespeare	Lyricist	0
+William Shakespeare	Author	1
+George W. Bush	Public speaker	0
+George W. Bush	Politician	7
+George W. Bush	Pilot	0
+George W. Bush	Businessperson	3
+George W. Bush	Author	0
+Napoleon	Politician	0
+Napoleon	Military Officer	7
+Carl Linnaeus	Physician	0
+Carl Linnaeus	Botanist	7
+Carl Linnaeus	Biologist	0
+Bill Clinton	Teacher	3
+Bill Clinton	Statesman	0
+Bill Clinton	Lawyer	7
+Bill Clinton	Author	0
+Wolfgang Amadeus Mozart	Violist	7
+Wolfgang Amadeus Mozart	Violinist	7
+Wolfgang Amadeus Mozart	Pianist	0
+Wolfgang Amadeus Mozart	Composer	2
+Johann Sebastian Bach	Violist	5
+Johann Sebastian Bach	Violinist	5
+Johann Sebastian Bach	Teacher	1
+Johann Sebastian Bach	Organist	0
+Johann Sebastian Bach	Harpsichordist	7
+Johann Sebastian Bach	Composer	6
+Johann Sebastian Bach	Cantor	0
+Bob Dylan	Singer-songwriter	4
+Bob Dylan	Record producer	0
+Bob Dylan	Poet	0
+Bob Dylan	Peace activist	0
+Bob Dylan	Lyricist	0
+Bob Dylan	Guitarist	5
+Bob Dylan	Film Score Composer	0
+Bob Dylan	Disc jockey	7
+Bob Dylan	Author	0
+Bob Dylan	Actor	1
+John F. Kennedy	Politician	7
+John F. Kennedy	Military Officer	2
+John F. Kennedy	Author	0
+Pope John Paul II	Writer	2
+Pope John Paul II	Priest	7
+Pope John Paul II	Philosopher	0
+Aristotle	Writer	0
+Aristotle	Tutor	0
+Aristotle	Teacher	0
+Aristotle	Scientist	0
+Aristotle	Polymath	3
+Aristotle	Philosopher	7
+Paul McCartney	Songwriter	7
+Paul McCartney	Social activist	0
+Paul McCartney	Singer-songwriter	4
+Paul McCartney	Record producer	0
+Paul McCartney	Poet	0
+Paul McCartney	Pianist	6
+Paul McCartney	Peace activist	0
+Paul McCartney	Multi-instrumentalist	0
+Paul McCartney	Keyboard player	0
+Paul McCartney	Guitarist	7
+Paul McCartney	Film Score Composer	0
+Paul McCartney	Film Producer	1
+Paul McCartney	Entrepreneur	0
+Paul McCartney	Drummer	0
+Paul McCartney	Businessperson	1
+Paul McCartney	Bassist	0
+Julius Caesar	Politician	7
+Julius Caesar	Author	0
+Theodore Roosevelt	Statesman	0
+Theodore Roosevelt	Polymath	7
+Theodore Roosevelt	Police officer	2
+Theodore Roosevelt	Historian	1
+Theodore Roosevelt	Conservationist	2
+Theodore Roosevelt	Author	0
+Walt Disney	Voice Actor	0
+Walt Disney	Television Producer	0
+Walt Disney	Screenwriter	5
+Walt Disney	Film Producer	7
+Walt Disney	Film Editor	4
+Walt Disney	Film Director	5
+Walt Disney	Entrepreneur	0
+Walt Disney	Entertainer	0
+Walt Disney	Businessperson	2
+Walt Disney	Animator	0
+Walt Disney	Actor	4
+Jimmy Carter	Statesman	0
+Jimmy Carter	Novelist	3
+Jimmy Carter	Military Officer	2
+Jimmy Carter	Farmer	7
+Jimmy Carter	Author	0
+Lady Gaga	Social activist	0
+Lady Gaga	Singer-songwriter	7
+Lady Gaga	Record producer	0
+Lady Gaga	Fashion Designer	2
+Lady Gaga	Businessperson	2
+Lady Gaga	Actor	2
+Albert Einstein	Theoretical Physicist	7
+Albert Einstein	Teacher	0
+Albert Einstein	Philosopher	1
+Albert Einstein	Mathematician	0
+Albert Einstein	Author	0
+Stevie Wonder	Singer-songwriter	5
+Stevie Wonder	Record producer	0
+Stevie Wonder	Pianist	7
+Stevie Wonder	Organist	0
+Stevie Wonder	Multi-instrumentalist	0
+Stevie Wonder	Lyricist	0
+Stevie Wonder	Keyboard player	0
+Stevie Wonder	Film Score Composer	0
+Stevie Wonder	Film Producer	0
+Stevie Wonder	Drummer	0
+Stevie Wonder	Actor	1
+Frank Zappa	Songwriter	7
+Frank Zappa	Record producer	0
+Frank Zappa	Conductor	0
+Frank Zappa	Composer	1
+Neil Young	Songwriter	7
+Neil Young	Screenwriter	1
+Neil Young	Record producer	0
+Neil Young	Film Score Composer	0
+Neil Young	Film Producer	0
+Neil Young	Film Director	1
+Neil Young	Actor	1
+Neil Young	Activist	0
+Alfred Hitchcock	Television Producer	0
+Alfred Hitchcock	Television director	0
+Alfred Hitchcock	Screenwriter	6
+Alfred Hitchcock	Film Producer	4
+Alfred Hitchcock	Film Director	7
+Alfred Hitchcock	Film Art Director	4
+Alfred Hitchcock	Actor	5
+Marvin Gaye	Singer-songwriter	7
+Marvin Gaye	Record producer	0
+Marvin Gaye	Keyboard player	0
+Marvin Gaye	Film Score Composer	0
+Luke the Evangelist	Writer	7
+Luke the Evangelist	Physician	0
+Justin Timberlake	Television Producer	0
+Justin Timberlake	Singer-songwriter	7
+Justin Timberlake	Record producer	0
+Justin Timberlake	Film Producer	1
+Justin Timberlake	Dancer	2
+Justin Timberlake	Businessperson	2
+Justin Timberlake	Actor	2
+Bertolt Brecht	Theatre Director	7
+Bertolt Brecht	Screenwriter	3
+Bertolt Brecht	Poet	4
+Bertolt Brecht	Playwright	4
+Bertolt Brecht	Lyricist	0
+Bertolt Brecht	Librettist	0
+James Cook	Sailor	0
+James Cook	Explorer	7
+Tupac Shakur	Songwriter	3
+Tupac Shakur	Social activist	0
+Tupac Shakur	Record producer	0
+Tupac Shakur	Rapper	7
+Tupac Shakur	Poet	0
+Tupac Shakur	Dancer	0
+Tupac Shakur	Actor	1
+Missy Elliott	Singer-songwriter	4
+Missy Elliott	Record producer	0
+Missy Elliott	Rapper	7
+Missy Elliott	Dancer	1
+Missy Elliott	Actor	1
+Samuel Taylor Coleridge	Poet	7
+Samuel Taylor Coleridge	Philosopher	1
+Samuel Taylor Coleridge	Critic	0
+Billy Joel	Singer-songwriter	5
+Billy Joel	Pianist	7
+Billy Joel	Orchestrator	3
+Billy Joel	Lyricist	0
+Billy Joel	Composer	1
+Billy Joel	Businessperson	1
+Miley Cyrus	Singer-songwriter	7
+Miley Cyrus	Model	0
+Miley Cyrus	Dancer	2
+Miley Cyrus	Actor	3
+Geoffrey Chaucer	Poet	7
+Geoffrey Chaucer	Philosopher	1
+Geoffrey Chaucer	Diplomat	0
+Geoffrey Chaucer	Bureaucrat	0
+Geoffrey Chaucer	Author	5
+Geoffrey Chaucer	Astrologer	1
+Bryan Adams	Social activist	0
+Bryan Adams	Singer-songwriter	7
+Bryan Adams	Record producer	0
+Bryan Adams	Photographer	1
+Bryan Adams	Film Score Composer	0
+Bryan Adams	Actor	1
+Tacitus	Writer	0
+Tacitus	Historian	7
+Ben Jonson	Poet	7
+Ben Jonson	Playwright	5
+Ben Jonson	Actor	0
+Paul Newman	Voice Actor	0
+Paul Newman	Racing driver	1
+Paul Newman	Philanthropist	0
+Paul Newman	Film Producer	4
+Paul Newman	Film Director	7
+Paul Newman	Entrepreneur	0
+Paul Newman	Businessperson	1
+Paul Newman	Actor	7
+Paul Newman	Activist	0
+Howard Hughes	Pilot	6
+Howard Hughes	Philanthropist	2
+Howard Hughes	Investor	0
+Howard Hughes	Film Producer	5
+Howard Hughes	Film Director	7
+Howard Hughes	Engineer	0
+Peter Sellers	Singer	1
+Peter Sellers	Screenwriter	6
+Peter Sellers	Film Director	6
+Peter Sellers	Comedian	0
+Peter Sellers	Actor	7
+Zhou Enlai	Revolutionary	0
+Zhou Enlai	Politician	7
+Zhou Enlai	Diplomat	0
+Carlos Santana	Songwriter	6
+Carlos Santana	Guitarist	7
+Carlos Santana	Bandleader	0
+Lorenz Hart	Songwriter	7
+Lorenz Hart	Playwright	2
+Lorenz Hart	Lyricist	0
+Lorenz Hart	Composer	1
+Gabriel Fauré	Pianist	7
+Gabriel Fauré	Organist	0
+Gabriel Fauré	Conductor	0
+Gabriel Fauré	Composer	4
+John Henry Newman	Theologian	7
+John Henry Newman	Priest	3
+John Henry Newman	Novelist	0
+Nikolai Rimsky-Korsakov	Conductor	0
+Nikolai Rimsky-Korsakov	Composer	7
+Thomas Carlyle	Writer	2
+Thomas Carlyle	Philosopher	7
+Thomas Carlyle	Mathematician	0
+Billy Graham	Screenwriter	2
+Billy Graham	Preacher	7
+Billy Graham	Pastor	0
+Billy Graham	Film Producer	1
+Billy Graham	Evangelist	7
+Billy Graham	Actor	1
+Ewan McGregor	Voice Actor	0
+Ewan McGregor	Television Producer	0
+Ewan McGregor	Singer	1
+Ewan McGregor	Screenwriter	6
+Ewan McGregor	Actor	7
+J. D. Salinger	Soldier	0
+J. D. Salinger	Novelist	7
+Fats Waller	Singer	1
+Fats Waller	Organist	0
+Fats Waller	Jazz Pianist	7
+Fats Waller	Composer	1
+Fats Waller	Comedian	0
+Edward R. Murrow	TV Editor	2
+Edward R. Murrow	Television Producer	0
+Edward R. Murrow	Screenwriter	2
+Edward R. Murrow	Journalist	7
+Edward R. Murrow	Film Producer	0
+Edward R. Murrow	Film Editor	2
+Edward R. Murrow	Broadcaster	6
+Ryuichi Sakamoto	Writer	0
+Ryuichi Sakamoto	Record producer	0
+Ryuichi Sakamoto	Pianist	7
+Ryuichi Sakamoto	Film Score Composer	0
+Ryuichi Sakamoto	Actor	1
+Brian McKnight	Television Producer	0
+Brian McKnight	Singer-songwriter	7
+Brian McKnight	Record producer	0
+Brian McKnight	Music Arranger	0
+Brian McKnight	Composer	0
+Brian McKnight	Actor	1
+Julio Iglesias	Songwriter	7
+Julio Iglesias	Singer-songwriter	0
+Steven Van Zandt	Songwriter	6
+Steven Van Zandt	Singer-songwriter	4
+Steven Van Zandt	Record producer	0
+Steven Van Zandt	Music Arranger	0
+Steven Van Zandt	Guitarist	7
+Steven Van Zandt	Disc jockey	7
+Steven Van Zandt	Actor	1
+Malcolm Young	Songwriter	7
+Malcolm Young	Singer	0
+Malcolm Young	Record producer	0
+Malcolm Young	Guitarist	7
+Malcolm Young	Film Score Composer	0
+Malcolm Young	Actor	0
+Dave Navarro	Television Producer	0
+Dave Navarro	Singer	0
+Dave Navarro	Guitarist	7
+Dave Navarro	Film Score Composer	0
+Dave Navarro	Actor	0
+Guru Dutt	Screenwriter	7
+Guru Dutt	Film Producer	4
+Guru Dutt	Film Director	5
+Guru Dutt	Choreography	0
+Guru Dutt	Actor	5
+Jayalalithaa	Politician	0
+Jayalalithaa	Playback Singer	0
+Jayalalithaa	Actor	7
+Stacy Keach	Voice Actor	0
+Stacy Keach	Television Producer	0
+Stacy Keach	Actor	7
+David Essex	Singer-songwriter	6
+David Essex	Film Score Composer	0
+David Essex	Actor	7
+Hilary Putnam	Physician	0
+Hilary Putnam	Philosopher	7
+Hilary Putnam	Mathematician	0
+Ellen Page	Voice Actor	0
+Ellen Page	Actor	7
+Michelle Yeoh	Film Producer	4
+Michelle Yeoh	Dancer	1
+Michelle Yeoh	Choreographer	0
+Michelle Yeoh	Actor	7
+Alexander Downer	Politician	7
+Alexander Downer	Economist	0
+John Renbourn	Songwriter	7
+John Renbourn	Guitarist	0
+Dennis Johnson	Coach	0
+Dennis Johnson	Basketball player	7
+Adoor Gopalakrishnan	Screenwriter	7
+Adoor Gopalakrishnan	Film Producer	0
+Adoor Gopalakrishnan	Film Director	1
+Steve Jordan (musician)	Songwriter	7
+Steve Jordan (musician)	Record producer	0
+Steve Jordan (musician)	Music Director	0
+Steve Jordan (musician)	Multi-instrumentalist	0
+Steve Jordan (musician)	Film Score Composer	0
+Steve Jordan (musician)	Educator	0
+Steve Jordan (musician)	Drummer	0
+Steve Jordan (musician)	Actor	0
+Aleksander Kwaśniewski	Politician	7
+Aleksander Kwaśniewski	Journalist	0
+William Jackson (secretary)	Military Officer	0
+William Jackson (secretary)	Merchant	2
+William Jackson (secretary)	Lawyer	7
+Nichelle Nichols	Voice Actor	0
+Nichelle Nichols	Singer	2
+Nichelle Nichols	Film Producer	2
+Nichelle Nichols	Actor	7
+Slim Pickens	Rodeo performer	0
+Slim Pickens	Rodeo clown	3
+Slim Pickens	Actor	7
+John Elefante	Singer-songwriter	7
+John Elefante	Record producer	0
+Isaac Isaacs	Politician	1
+Isaac Isaacs	Judge	0
+Isaac Isaacs	Barrister	7
+Lillian Russell	Singer	7
+Lillian Russell	Actor	0
+Giambattista della Porta	Meteorologist	7
+Giambattista della Porta	Mathematician	0
+Giambattista della Porta	Alchemist	0
+Lotti Golden	Songwriter	7
+Lotti Golden	Singer-songwriter	0
+Alexandra Stan	Singer-songwriter	7
+Alexandra Stan	Model	0
+Mervyn Warren	Songwriter	2
+Mervyn Warren	Singer	1
+Mervyn Warren	Record producer	0
+Mervyn Warren	Pianist	7
+Mervyn Warren	Music Arranger	0
+Mervyn Warren	Lyricist	0
+Mervyn Warren	Film Score Composer	0
+Mervyn Warren	Conductor	0
+Mervyn Warren	Actor	1
+Mark Turner (musician)	Songwriter	7
+Mark Turner (musician)	Record producer	0
+Sam Lee (actor)	Singer	0
+Sam Lee (actor)	Rapper	3
+Sam Lee (actor)	Model	0
+Sam Lee (actor)	Disc jockey	4
+Sam Lee (actor)	Actor	7
+Mike Dean (record producer)	Record producer	0
+Mike Dean (record producer)	Musician	0
+Mike Dean (record producer)	Audio Engineer	0
+Fernandel	Singer	0
+Fernandel	Film Producer	4
+Fernandel	Actor	7
+Luiz Gonzaga	Songwriter	5
+Luiz Gonzaga	Singer	7
+Luiz Gonzaga	Poet	0
+Luiz Gonzaga	Film Score Composer	0
+Luiz Gonzaga	Actor	0
+Tony Walton	Scenic Designer	0
+Tony Walton	Production designer	0
+Tony Walton	Costume Designer	7
+Tony Walton	Art Director	0
+Nicole C. Mullen	Songwriter	7
+Nicole C. Mullen	Choreography	0
+Morley Callaghan	Playwright	1
+Morley Callaghan	Novelist	7
+Morley Callaghan	Lawyer	0
+Morley Callaghan	Journalist	1
+Hugues Duboscq	Swimmer	7
+Hugues Duboscq	Police officer	0
+Eric Dover	Songwriter	7
+Eric Dover	Singer	0
+Nellie Tayloe Ross	Teacher	0
+Nellie Tayloe Ross	Politician	7
+Kaye Adams	Presenter	7
+Kaye Adams	Journalist	0
+Émerson Leão	Football player	0
+Émerson Leão	Coach	0
+Valentin Lebedev	Engineer	0
+Valentin Lebedev	Astronaut	0
+Jerry Kleczka	Politician	7
+Jerry Kleczka	Accountant	0
+Rudy Wurlitzer	Screenwriter	2
+Rudy Wurlitzer	Novelist	7
+Rudy Wurlitzer	Actor	0
+Steven Johnson (author)	Science writer	0
+Steven Johnson (author)	Journalist	7
+Steven Johnson (author)	Author	0
+Tim Herlihy	Television Producer	0
+Tim Herlihy	Screenwriter	7
+Tim Herlihy	Lawyer	0
+Tim Herlihy	Film Score Composer	0
+Tim Herlihy	Film Producer	2
+Tim Herlihy	Actor	5
+Kerry Kennedy	Social activist	0
+Kerry Kennedy	Lawyer	7
+Kerry Kennedy	Author	0
+Riker Lynch	Singer-songwriter	5
+Riker Lynch	Guitarist	7
+Riker Lynch	Dancer	5
+Riker Lynch	Bassist	0
+Riker Lynch	Actor	2
+Jacques Bergier	Writer	7
+Jacques Bergier	Engineer	0
+Johnnetta B. Cole	Professor	0
+Johnnetta B. Cole	Anthropologist	7
+Roy Rowland (film director)	Television director	0
+Roy Rowland (film director)	Film Producer	5
+Roy Rowland (film director)	Film Director	7
+Arthur Rooke	Screenwriter	0
+Arthur Rooke	Film Director	7
+Arthur Rooke	Actor	2
+Harold MacGrath	Screenwriter	0
+Harold MacGrath	Novelist	7
+Paul Hersey	Manager	0
+Paul Hersey	Consultant	0
+Paul Hersey	Author	0
+Jared Kushner	Media proprietor	0
+Jared Kushner	Businessperson	7
+Steve Lambke	Singer-songwriter	0
+Steve Lambke	Guitarist	7
+Suzanne Sena	Television Show Host	7
+Suzanne Sena	Journalist	2
+Suzanne Sena	Actor	0
+Michael Jackson (anthropologist)	Educator	0
+Michael Jackson (anthropologist)	Anthropologist	7
+Peter Sumner	Writer	0
+Peter Sumner	Television director	0
+Peter Sumner	Actor	7
+Monique Gabrielle	Pin-up girl	0
+Monique Gabrielle	Film Producer	5
+Monique Gabrielle	Actor	7
+Carol Chumney	Politician	0
+Carol Chumney	Lawyer	7
+Alex Munro (comedian)	Comedian	0
+Alex Munro (comedian)	Actor	7
+Tabitha Stevens	Pornographic actor	7
+Tabitha Stevens	Film Producer	0
+Matt Brandstein	Writer	0
+Matt Brandstein	Cartoonist	3
+Matt Brandstein	Actor	7
+Mark Ciardi	Film Producer	6
+Mark Ciardi	Baseball player	0
+Mark Ciardi	Actor	7
+Levine Andrade	Conductor	0
+Levine Andrade	Composer	7
+Ba U	Politician	0
+Ba U	Lawyer	7
+Jonathan Aaron	Professor	0
+Jonathan Aaron	Poet	7
+Thembo Nyombi	Politician	7
+Thembo Nyombi	Economist	0
+Steve White (producer)	Film Producer	0
+Steve White (producer)	Actor	7
+Mindy Aloff	Journalist	7
+Mindy Aloff	Editor	0
+Vilen Künnapu	Professor	7
+Vilen Künnapu	Architect	0
+Janet Fox (author)	Publisher	0
+Janet Fox (author)	Book editor	7
+Janet Fox (author)	Author	1
+Gary Cohn (journalist)	Professor	7
+Gary Cohn (journalist)	Journalist	0
+Stan Edmonds	Screenwriter	7
+Stan Edmonds	Actor	7
+JoAnn D. Osmond	Politician	0
+JoAnn D. Osmond	Insurance Broker	0
+Guillermo de Cun	Television Producer	0
+Guillermo de Cun	Television director	0
+Guillermo de Cun	Screenwriter	7
+Guillermo de Cun	Radio producer	0
+Guillermo de Cun	Music Director	0
+Guillermo de Cun	Actor	5
+Tericka Dye	Teacher	0
+Tericka Dye	Pornographic actor	7
+David K Williams	Philanthropist	0
+David K Williams	Entrepreneur	0
+David K Williams	Businessperson	7
+David K Williams	Author	0
+Jon Penington	Screenwriter	7
+Jon Penington	Film Producer	0
+Costas Kadis	Politician	0
+Costas Kadis	Physician	0
