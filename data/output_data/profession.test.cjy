@@ -1,8 +1,10 @@
-Barack Obama	Actor	0.0
-Barack Obama	Politician	0.0
-Rosa Maria Sardà	Teacher	0.0
-Rosa Maria Sardà	Statesman	0.0
-Rosa Maria Sardà	Lawyer	0.0
-Rosa Maria Sardà	Author	0.0
-Vilen KÃ¼nnapu	Professor	0.0
-Vilen KÃ¼nnapu	Architect	0.0
+Barack Obama	Politician	7
+Barack Obama	Lawyer	7
+Barack Obama	Law professor	3
+Barack Obama	Author	0
+William Shakespeare	Poet	2
+William Shakespeare	Playwright	7
+William Shakespeare	Lyricist	1
+William Shakespeare	Author	0
+George W. Bush	Public speaker	7
+George W. Bush	Politician	0

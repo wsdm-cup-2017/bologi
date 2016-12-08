@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 import pandas as pd
 from cjy_predict import predice_train_file_job_using_dict
+from cjy_predict import predice_train_file_nation_using_dict
 # from Predict import Predice_train_file_nation
 # from Predict import write_test_sentences_to_file
 
@@ -33,8 +34,8 @@ if __name__=='__main__':
         if type_name=="profession":
             print "predict profession"
             predice_train_file_job_using_dict(path, opath)
-        if type_name== "nationality":
+        else:
+        # if type_name== "nationality":
             print "predict nationality"
-            # TODO: might need to do the similar modification as did to profession
-            # Predice_train_file_nation(path, opath)
+            predice_train_file_nation_using_dict(path, opath)
 

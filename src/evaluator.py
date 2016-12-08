@@ -60,6 +60,7 @@ def read_files(filename1, filename2):
             line_str = ", at line " + str(i)
             assert len(cols1) == 3, "#columns != 3 in file1" + line_str
             assert len(cols2) == 3, "#columns != 3 in file2" + line_str
+            # print (line_str, "[",cols1[0], "]vs.[", cols2[0],"]")
             assert cols1[0] == cols2[0], "col1(file1) != col1(file2)" + line_str
             assert cols1[1] == cols2[1], "col2(file1) != col2(file2)" + line_str
             s1, s2 = cols1[2].rstrip(), cols2[2].rstrip()

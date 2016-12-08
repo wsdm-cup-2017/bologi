@@ -2,6 +2,10 @@
 The Bologi Triple Scorer
 
 # resrc
+- on vm, data already located at
+	bologi@tira-ubuntu:/media/training-datasets/triple-scoring/wsdmcup17-triple-scoring-training-dataset-2016-09-16$ ls
+	nationalities  nationality.kb  nationality.train  persons  profession.kb  professions  profession.train  triple-scoring.zip  wiki-sentences
+
 - download datas as zip:
 	'curl http://broccoli.cs.uni-freiburg.de/wsdm-cup-2017/triple-scoring.zip -o <output path such as ./data/war_data/wiki-sentences>'
 - to create smaller sample wiki file for testing:
@@ -26,8 +30,6 @@ such as 'python2 cjy_main.py -i ../data/input_tuple/profession.test.cjy -o ../da
 3. inspect output triples
 'cd ./data/output_data'
 
-## word2vec
-vectors-enwikitext_vivek200.zip
 
 # encoding problem w/ unicode
 - stored key in semi-unicode like string:
@@ -38,3 +40,9 @@ vectors-enwikitext_vivek200.zip
 u'Vilen K\xc3\xbcnnapu'
 
 key is 'Vilen K\xc3\x83\xc2\xbcnnapu'
+
+# wiki path on vm
+"/media/training-datasets/triple-scoring/wsdmcup17-triple-scoring-training-dataset-2016-09-16/wiki-sentences"
+
+## word2vec
+vectors-enwikitext_vivek200.zip

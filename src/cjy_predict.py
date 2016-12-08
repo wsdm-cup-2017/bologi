@@ -11,6 +11,7 @@ import re
 import sys
 import os
 import pickle
+import random
 
 from collections import OrderedDict, defaultdict
 
@@ -96,9 +97,11 @@ def Predict_each_job_freq(occupations, table, sentences):
         specific_words = table[job]
         for sentence in sentences:
             for word in sentence.split(' '):
-                if word in specific_words:
+                if word in specific_words: #/home/bologi/bologi/src/cjy_predict.py:99:
+                    # UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
                         res[job] += 1
-                # except:
+                        # cjycjy: error for nation, never match, never enter this branch
+                # else:
                 #     print "error word: ", word
 
     res = normalize(res)
@@ -206,7 +209,34 @@ def predice_train_file_job_using_dict_helper(prof_path, prof_result_path, name2s
             dict_triple[name][job] = score
         # df_out.loc[i] = [name, job, job_score_pairs[job]]
         # i+=1
+    return
+# new add 12.8
+def predice_train_file_nation_using_dict_helper(prof_path, prof_result_path, name2sentences, dict_triple):
+    print "in predice_train_file_job_using_dict"
+    job_Pair =  Read_NameJob_pair_from_testfile(prof_path)
+    job_table = read_table("../data/intermediate_data/nation_words_table.txt")
+    names_in_job= Read_name_from_profession(prof_path)
 
+    # sentences = read_sentence_train("name_sentence_dict.json")
+    print "dict: name2sentences loaded"
+    slices = Slice_for_each_person(job_Pair)
+    # i = df_out.shape[0]
+    for index, row in job_Pair.iterrows():
+        #!!!SHOULD NOT NEED TO STRIP IF INPUT FORMAT IS CORRECT WITH NO EXTRA SPACE .strip()
+        name = row['name']
+        name_key = name.encode("utf-8") # because stored as unicode string before by pandas
+
+        job  = row['occupation']
+        if name_key not in name2sentences:
+            # print "=> Not Found: [", name,"]"
+            continue
+        # else:
+        #     print "==> :)))) Found: ", name
+        job_score_pairs = Predict_each_job_freq(slices[name],job_table,name2sentences[name_key])
+        for job, score in job_score_pairs.iteritems():
+            dict_triple[name][job] = score
+        # df_out.loc[i] = [name, job, job_score_pairs[job]]
+        # i+=1
     return
 
 # load pickle dictionary into memory
@@ -217,6 +247,17 @@ def load_dict(dict_prefix, lowb, highb):
       restored_dict = pickle.load(f)
     print "===> Opened ", filename
     return restored_dict
+
+def maxto7(df, starti, endi):
+    maxi = starti
+    maxs = 0
+    for i in range(starti, endi):
+        score = df.loc[i]['score']
+        if score > maxs:
+            maxs = score
+            maxi = i
+    df.loc[maxi,'score'] = 7
+    return
 
 def predice_train_file_job_using_dict(prof_path, prof_result_path):
     # dict to store prediction result, while keeping original order w/ input
@@ -249,8 +290,52 @@ def predice_train_file_job_using_dict(prof_path, prof_result_path):
     i = 0
     for name, job_score_pair in dict_triple.iteritems():
         for job, score in job_score_pair.iteritems():
+            # cjycjy
             df_out.loc[i] = [name, job, score]
             i += 1
+        maxto7(df_out, i-len(job_score_pair), i-1)
+
     df_out[['score']] = df_out[['score']].astype(int)
     df_out.set_index(keys = ['name'] , inplace = True)
     df_out.to_csv(prof_result_path, header=None, sep = '\t', encoding='utf-8')
+
+
+
+def predice_train_file_nation_using_dict(nation_path, nation_result_path):
+    # dict to store prediction result, while keeping original order w/ input
+    dict_triple = OrderedDefaultDict(OrderedDefaultDict)
+    df_out = pd.DataFrame(columns = ['name','job', 'score'])
+
+    # read in pair file, init guess to be 0 !!TODO, May modify to some median number
+    s1 = pd.read_csv(nation_path, names = ['name' , 'occupation' , 'score'] , sep = '\t', encoding = 'utf-8')
+    df_in = DataFrame(s1)
+    for index, row in df_in.iterrows():
+        dict_triple[row['name']][row['occupation']] = 0
+
+    # predict using dictionary to look up for wiki-sentences
+    name2sentences = None
+    intervals = [ord('a'), ord('d'), ord('g'), ord('j'), ord('n'), ord('r'), ord('u')]
+    for i in range(len(intervals)):
+      print i, "==============================>\n"
+      is_last_interval = i + 1 == len(intervals)
+      lowb = intervals[0] if is_last_interval else intervals[i]
+      highb = intervals[i] if is_last_interval else intervals[i+1]
+
+      prefix = "../data/intermediate_data/name2sentence/name2sentence_"
+      if is_last_interval:
+        prefix += "NOT_"
+      del name2sentences
+      name2sentences = load_dict(prefix, chr(lowb), chr(highb))
+      predice_train_file_nation_using_dict_helper(nation_path, nation_result_path, name2sentences, dict_triple)
+
+    # store result to file
+    i = 0
+    for name, job_score_pair in dict_triple.iteritems():
+        for job, score in job_score_pair.iteritems():
+            # cjycjy
+            df_out.loc[i] = [name, job, score]
+            i += 1
+        maxto7(df_out, i-len(job_score_pair), i-1)
+    df_out[['score']] = df_out[['score']].astype(int)
+    df_out.set_index(keys = ['name'] , inplace = True)
+    df_out.to_csv(nation_result_path, header=None, sep = '\t', encoding='utf-8')
