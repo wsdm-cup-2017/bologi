@@ -1,1 +1,821 @@
-{"canada": ["canada", "canadian", "canadians", "toronto", "ottawa", "vancouver", "montreal"], "lithuania": ["lithuania", "lithuanian", "lithuanians", "vilnius", "hill of crosses", "kaunas"], "argentina": ["argentina", "argentine", "argentines", "bruenos aires ", "iguazu falls", "mendoza", "c贸doba"], "cameroon": ["cameroon", "cameroonian", "cameroonians", "yaound茅", "douala", "mount cameroon", "kribi"], "bahrain": ["bahrain", "bahraini", "bahrainis", "manama", "bahrain island", "muharraq"], "saudi arabia": ["saudi arabia", "saudi", "saudis", "saudi arabian", "saudi arabians", "riydah", "jeddah", "mecca"], "republic of ireland": ["republic of ireland", "ireland", "irish", "irishman", "irishwoman", "irishmen", "irishwomen","dublin", "galway", "cork", "cliffs of moher"], "slovenia": ["slovenia", "slovenian", "slovene", "slovenes", "ljublijana", "bled", "lake bled"], "bosnia and herzegovina": ["bosnia and herzegovina", "bosnian", "herzegovinian", "bosnians", "herzegovinians", "sarajevo", "medjugorje", "stari most", "kravice"], "spain": ["spain", "spanish", "spaniard", "spaniards", "madrid", "barcelona", "sagrada fam铆lia", "alhambra"], "netherlands": ["netherlands", "dutch", "dutchman", "dutchwoman", "dutchmen", "dutchwomen", "amesterdam", " rotterdam", "maastricht", "rijksmuseum"], "jamaica": ["jamaica", "jamaican", "jamaicans", "kingston", "negril", "dunn's river falls", "dolphin cove jamaica"], "new zealand": ["new zealand", "new zealander", "new zealanders", "wellington", "auckland", "milford sound", "tongariro national park"], "pakistan": ["pakistan", "pakistani", "pakistanis", "islamabad", "karachi", "lahore", "peshawar"], "albania": ["albania", "albanian", "albanians", "tirana", "sarand毛", "albanian riviera", "rozafa castle"], "england": ["england", "english", "englishman", "englishwoman", "englishmen", "englishwomen", "london", "manchester", "tower of london", "stonehenge"], "india": ["india", "indian", "indians", "mumbai", "goa", "bengaluru", "chennai"], "azerbaijan": ["azerbaijan", "azerbaijani", "azerbaijanis", "baku", "ganja", "maiden tower", "palace of the shirvanshahs"], "kenya": ["kenya", "kenyan", "kenyan", "nairobi", "maasai mara", "lake nakuru", "tsavo east national park"], "south korea": ["south korea", "south korean", "south koreans", "seoul", "busan", "gyeongbokgung", "n seoul tower"], "turkey": ["turkey", "turkish", "turk", "turks", "istanbul", "antalya", "hagia sophia", "ankara"], "afghanistan": ["afghanistan", "afghan", "afghans", "kabul", "kandahar", "bamyan", "bamyan province"], "bangladesh": ["bangladesh", "bangladeshi", "bangladeshis", "dhaka", "sylhet", "chittagong", "cox's bazar"], "france": ["france", "french", "frenchman", "frenchwoman", "frenchmen", "frenchwomen", "paris", "bordeaux", "eiffel tower", "arc de triomphe"], "slovakia": ["slovakia", "slovak", "slovaks", "bratislava", "tatra mountains", "dev铆n castle", "spi拧 castle"], "peru": ["peru", "peruvian", "peruvians", " lima", "machu picchu", "cusco", "sacred valley"], "norway": ["norway", "norwegian", "norwegians", "oslo", "bergen", "troms酶", "oslofjord"], "cuba": ["cuba", "cuban", "cubans", "havana", "varadero", "santiago de cuba", "malec贸n, havana"], "united states of america": ["united states of america", "american", "americans", "washington, d.c.", "new york", "statue of liberty", "los angeles"], "china": ["china", "chinese", "people's republic of china", "prc", "beijing", "shanghai", "macau", "great wall of china"], "armenia": ["armenia", "armenian", "armenians", "yerevan", "lake sevan", "geghard", "khor virap"], "dominican republic": ["dominican republic", "dominican", "dominicans", "dominica", "santo domingo", "punta cana", "b谩varo", "puerto plata"], "ukraine": ["ukraine", "ukrainian", "ukrainians", "kiev", "odessa", "kiev pechersk lavra", "saint sophia's cathedral"], "ghana": ["ghana", "ghanaian", "ghanaians", "accra", "kumasi", "cape coast castle", "elmina castle"], "finland": ["finland", "finnish", "finn", "finns", "helsinki", "rovaniemi", "suomenlinna", "temppeliaukio church"], "indonesia": ["indonesia", "indonesian", "indonesians", "bali", "jakarta", "borobudur", "tanah lot"], "sweden": ["sweden", "swedish", "swede", "swedes", "stockholm", "gothenburg", "vasa museum", "gamla stan"], "belarus": ["belarus", "belarusian", "belarusians", "minsk", "bia艂owie偶a forest", "mir castle complex"], "russia": ["russia", "russian", "russians", "moscow", "saint petersburg", "moscow kremlin", "winter palace"], "bulgaria": ["bulgaria", "bulgarian", "bulgarians", "sofia", "varna", "sunny beach", "rila monastery"], "romania": ["romania", "romanian", "romanians", "bucharest", "bra葯ov", "cluj鈥慛apoca", "pele葯 castle"], "portugal": ["portugal", "portuguese", "lisbon", "porto", "bel茅m tower", "jer贸nimos monastery"], "south africa": ["south africa", "south african", "south africans", "cape town", "johannesburg", "kruger national park", "table mountain"], "malaysia": ["malaysia", "malaysian", "malaysians", "kuala lumpur", "kota kinabalu", "petronas towers", "mount kinabalu"], "senegal": ["senegal", "senegalese", "dakar", "saly", "lake retba", "house of slaves"], "vietnam": ["vietnam", "vietnamese", "hanoi", "ho chi minh city", "c峄?chi tunnels", "ho脿n ki岷縨 lake"], "uganda": ["uganda", "ugandan", "ugandans", "kampala", "kazinga channel", "murchison falls national park", "bwindi impenetrable national park"], "japan": ["japan", "japanese", "tokyo", "osaka", "kyoto", "mount fuji"], "brazil": ["brazil", "brazilian", "brazilians", "bras铆lia", "rio de janeiro", "christ the redeemer", "corcovado"], "scotland": ["scotland", "scottish", "scot", "scots", "edinburgh", "glasgow", "kelvingrove art gallery and museum", "hmy britannia"], "ivory coast": ["ivory coast", "ivorian", "ivorians", "abidjan", " yamoussoukro", "basilica of our lady of peace", "banco national park"], "wales": ["wales", "welsh", "welshman", "welshwoman", "welshmen", "welshwomen", "cardiff", "swansea", "snowdonia", "snowdon"], "nigeria": ["nigeria", "nigerien", "nigeriens", "lagos", "abuja", "calabar"], "ecuador": ["ecuador", "ecuadorian", "ecuadorians", "quito", "gal谩pagos islands", "cotopaxi", "compa帽铆a de jes煤s"], "czech republic": ["czech republic", "czech", "prague", "prague", "charles bridge", "st. vitus cathedral"], "australia": ["australia", "australian", "australians", "sydney", "melbourne", "great barrier reef", "sydney opera house"], "iran": ["iran", "iranian", "iranians", "tehran", "isfahan", "mashhad"], "algeria": ["algeria", "algerian", "algerians", "algiers", "oran", "notre dame d'afrique", "maqam echahid"], "chile": ["chile", "chilean", "chileans", "santiago", "easter island", "torres del paine national park", "valle de la luna"], "puerto rico": ["puerto rico", "puerto rican", "puerto ricans", "san juan", "el yunque national forest", "old san juan", "castillo san felipe del morro"], "belgium": ["belgium", "belgian", "belgians", "brussels", "bruges", "bruges", "st bavo's cathedral, ghent"], "thailand": ["thailand", "thai", "bangkok", "ko samui", "grand palace", "wat phra kaew"], "iraq": ["iraq", "iraqi", "iraqis", "baghdad", "baghdad", "karbala"], "hong kong": ["hong kong", "hong konger", "victoria peak", "sleeping beauty castle", "lantau island"], "georgia": ["georgia", "georgian", "georgians", "tbilisi", "batumi", "narikala", "uplistsikhe"], "denmark": ["denmark", "danish", "dane", "danes", "copenhagen", "billund", "tivoli gardens", "kronborg"], "poland": ["poland", "polish", "pole", "poles", "warsaw", "krak贸w", "wieliczka salt mine", "wawel castle"], "morocco": ["morocco", "moroccan", "moroccans", "rabat", "marrakesh", "atlas mountains", "jemaa el-fnaa"], "croatia": ["croatia", "croatian", "croat", "croatians", "croats", "zagreb", "dubrovnik", "diocletian's palace", "bra膷"], "switzerland": ["switzerland", "swiss", "geneva", "z眉rich", "swiss alps", "jungfraujoch"], "estonia": ["estonia", "estonian", "estonians", "tallinn", "saaremaa", "kadriorg palace", "alexander nevsky cathedral"], "uruguay": ["uruguay", "uruguayan", "uruguayans", "montevideo", "punta del este", "sol铆s theatre", "palacio salvo"], "lebanon": ["lebanon", "lebanese", "beirut", "tripoli", "baalbek", "jeita grotto"], "tunisia": ["tunisia", "tunisian", "tunisians", "tunis", "carthage", "djerba", "great mosque of kairouan"], "colombia": ["colombia", "colombian", "colombians", "bogot谩", "cartagena", "gold museum", "san andr茅s"], "taiwan": ["taiwan", "taipei", "sun moon lake", "taichung"], "italy": ["italy", "italian", "italians", "rome", "venice", "milan", "colosseum"], "venezuela": ["venezuela", "venezuelan", "venezuelans", "caracas", "margarita island", "morrocoy national park", "playa el yaque"], "israel": ["israel", "israeli", "israelis", "jerusalem", "tel aviv", "sea of galilee", "western wall"], "iceland": ["iceland", "icelandic", "icelander", "icelanders", "reykjavik", "脼ingvellir", "blue lagoon", "gullfoss"], "czechoslovakia": ["czechoslovakia", "czechoslovakian", "czechoslovakians", "prague", "charles bridge", "prague castle", "prague astronomical clock"], "austria": ["austria", "austrian", "austrians", "vienna", "salzburg", "sch枚nbrunn palace", "hofburg palace"], "zimbabwe": ["zimbabwe", "zimbabwean", "zimbabwean", "victoria falls", "harare", "bulawayo", "hwange national park"], "germany": ["germany", "german", "germans", "berlin", "munich", "frankfurt", "neuschwanstein castle"], "kazakhstan": ["kazakhstan", "kazakhstani", "kazakhstanis", "astana", "almaty", "ascension cathedral", "bayterek"], "philippines": ["philippines", "philippine", "filipino", "filipinos", "manila", "boracay", "chocolate hills", "chocolate hills"], "greece": ["greece", "greek", "greeks", "athens", "santorini", "acropolis of athens", "parthenon"], "paraguay": ["paraguay", "paraguayan", "paraguayans", "asunci贸n", "ciudad del este", "encarnaci贸n", "casa de la independencia museum"], "latvia": ["latvia", "latvian", "latvians", "riga", "j奴rmala", "freedom monument", "st. peter's church"], "hungary": ["hungary", "hungarian", "hungarians", "budapest", "lake balaton", "buda castle", "sz茅chenyi thermal bath"], "syria": ["syria", "syrian", "syrians", "damascus", "aleppo", "palmyra"], "soviet union": ["soviet union", "soviet", "moscow"], "mexico": ["mexico", "mexican", "mexicans", "mexico city", "canc煤n", "coba", "xel鈥慔a park"], "egypt": ["egypt", "egyptian", "egyptians", "cairo", "sharm el sheikh", "great pyramid of giza", "great sphinx of giza"], "singapore": ["singapore", "singaporean", "singaporeans", "pulau ujong", "pulau ubin", "serangoon", "sentosa"], "serbia": ["serbia", "serbian", "serb", "serbs", "belgrade", "novi sad", "belgrade fortress", "church of saint sava"], "united kingdom": ["united kingdom", "british", "briton", "britons", "big ben", "british museum", "london", "liverpool"], "yugoslavia": ["yugoslavia", "yugoslav", "belgrade", "zagreb", "diocletian's palace", "hvar"], "northern ireland": ["northern ireland", "northern irish", "northern irishman", "northern irishwoman", "northern irishmen", "northern irishwomen", "belfast", "derry", "ulster museum", "ulster american folk park"], "sri lanka": ["sri lanka", "sri lankan", "sri lankans", "colombo", "kandy", "yala national park", "sigiriya"]}
+{
+    "afghanistan": [
+        "afghanistan",
+        "kabul",
+        "kandahar",
+        "bamyan provinc",
+        "afghan",
+        "bamyan"
+    ],
+    "albania": [
+        "albania",
+        "albanian",
+        "albanian riviera",
+        "tirana",
+        "sarand\u6bdb",
+        "rozafa castl"
+    ],
+    "algeria": [
+        "algerian",
+        "algeria",
+        "notre dame d'afriqu",
+        "algier",
+        "maqam echahid",
+        "oran"
+    ],
+    "argentina": [
+        "iguazu fal",
+        "mendoza",
+        "argentin",
+        "c\u8d38doba",
+        "bruenos aires ",
+        "argentina"
+    ],
+    "armenia": [
+        "geghard",
+        "lake sevan",
+        "armenian",
+        "armenia",
+        "khor virap",
+        "yerevan"
+    ],
+    "australia": [
+        "great barrier reef",
+        "australia",
+        "sydney opera hous",
+        "sydney",
+        "australian",
+        "melbourn"
+    ],
+    "austria": [
+        "sch\u679anbrunn palac",
+        "salzburg",
+        "austria",
+        "hofburg palac",
+        "austrian",
+        "vienna"
+    ],
+    "azerbaijan": [
+        "maiden tow",
+        "baku",
+        "azerbaijan",
+        "palace of the shirvanshah",
+        "ganja",
+        "azerbaijani"
+    ],
+    "bahrain": [
+        "bahrain",
+        "manama",
+        "bahraini",
+        "bahrain island",
+        "muharraq"
+    ],
+    "bangladesh": [
+        "dhaka",
+        "bangladesh",
+        "chittagong",
+        "bangladeshi",
+        "sylhet",
+        "cox's bazar"
+    ],
+    "belarus": [
+        "bia\u8242owie\u5076a forest",
+        "mir castle complex",
+        "belarus",
+        "belarusian",
+        "minsk"
+    ],
+    "belgium": [
+        "belgium",
+        "brussel",
+        "bruge",
+        "st bavo's cathedral, gh",
+        "belgian"
+    ],
+    "bosnia and herzegovina": [
+        "medjugorj",
+        "herzegovinian",
+        "bosnian",
+        "bosnia and herzegovina",
+        "stari most",
+        "kravic",
+        "sarajevo"
+    ],
+    "brazil": [
+        "brazil",
+        "rio de janeiro",
+        "christ the redeem",
+        "bras\u94c6lia",
+        "brazilian",
+        "corcovado"
+    ],
+    "bulgaria": [
+        "bulgarian",
+        "rila monasteri",
+        "sofia",
+        "sunny beach",
+        "varna",
+        "bulgaria"
+    ],
+    "cameroon": [
+        "yaound\u8305",
+        "mount cameroon",
+        "kribi",
+        "cameroon",
+        "douala",
+        "cameroonian"
+    ],
+    "canada": [
+        "canada",
+        "toronto",
+        "vancouv",
+        "canadian",
+        "ottawa",
+        "montreal"
+    ],
+    "chile": [
+        "valle de la luna",
+        "chilean",
+        "santiago",
+        "torres del paine national park",
+        "chile",
+        "easter island"
+    ],
+    "china": [
+        "great wall of china",
+        "macau",
+        "prc",
+        "chines",
+        "shanghai",
+        "beij",
+        "people's republic of china",
+        "china"
+    ],
+    "colombia": [
+        "bogot\u8c29",
+        "cartagena",
+        "gold museum",
+        "colombia",
+        "san andr\u8305",
+        "colombian"
+    ],
+    "croatia": [
+        "croat",
+        "bra\u81b7",
+        "zagreb",
+        "dubrovnik",
+        "croatia",
+        "diocletian's palac",
+        "croatian"
+    ],
+    "cuba": [
+        "cuban",
+        "havana",
+        "cuba",
+        "varadero",
+        "malec\u8d38n, havana",
+        "santiago de cuba"
+    ],
+    "czech republic": [
+        "czech",
+        "st. vitus cathedr",
+        "charles bridg",
+        "pragu",
+        "czech republ"
+    ],
+    "czechoslovakia": [
+        "prague astronomical clock",
+        "pragu",
+        "czechoslovakia",
+        "czechoslovakian",
+        "prague castl",
+        "charles bridg"
+    ],
+    "denmark": [
+        "kronborg",
+        "danish",
+        "denmark",
+        "billund",
+        "copenhagen",
+        "dane",
+        "tivoli garden"
+    ],
+    "dominican republic": [
+        "dominican republ",
+        "dominican",
+        "b\u8c29varo",
+        "puerto plata",
+        "santo domingo",
+        "punta cana",
+        "dominica"
+    ],
+    "ecuador": [
+        "gal\u8c29pagos island",
+        "quito",
+        "cotopaxi",
+        "ecuadorian",
+        "compa\u5e3d\u94c6a de jes\u7164",
+        "ecuador"
+    ],
+    "egypt": [
+        "sharm el sheikh",
+        "great pyramid of giza",
+        "egyptian",
+        "egypt",
+        "cairo",
+        "great sphinx of giza"
+    ],
+    "england": [
+        "stoneheng",
+        "manchest",
+        "england",
+        "englishman",
+        "englishwomen",
+        "tower of london",
+        "englishmen",
+        "london",
+        "english",
+        "englishwoman"
+    ],
+    "estonia": [
+        "saaremaa",
+        "estonia",
+        "alexander nevsky cathedr",
+        "tallinn",
+        "kadriorg palac",
+        "estonian"
+    ],
+    "finland": [
+        "rovaniemi",
+        "finnish",
+        "helsinki",
+        "finland",
+        "suomenlinna",
+        "finn",
+        "temppeliaukio church"
+    ],
+    "france": [
+        "franc",
+        "arc de triomph",
+        "frenchwoman",
+        "frenchwomen",
+        "french",
+        "pari",
+        "frenchmen",
+        "eiffel tow",
+        "bordeaux",
+        "frenchman"
+    ],
+    "georgia": [
+        "batumi",
+        "georgia",
+        "uplistsikh",
+        "georgian",
+        "tbilisi",
+        "narikala"
+    ],
+    "germany": [
+        "germani",
+        "german",
+        "munich",
+        "neuschwanstein castl",
+        "berlin",
+        "frankfurt"
+    ],
+    "ghana": [
+        "ghana",
+        "kumasi",
+        "cape coast castl",
+        "elmina castl",
+        "accra",
+        "ghanaian"
+    ],
+    "greece": [
+        "parthenon",
+        "athen",
+        "greek",
+        "santorini",
+        "greec",
+        "acropolis of athen"
+    ],
+    "hong kong": [
+        "lantau island",
+        "hong kong",
+        "victoria peak",
+        "sleeping beauty castl"
+    ],
+    "hungary": [
+        "lake balaton",
+        "sz\u8305chenyi thermal bath",
+        "budapest",
+        "hungarian",
+        "hungari",
+        "buda castl"
+    ],
+    "iceland": [
+        "\u813cingvellir",
+        "iceland",
+        "gullfoss",
+        "reykjavik",
+        "blue lagoon"
+    ],
+    "india": [
+        "chennai",
+        "mumbai",
+        "india",
+        "goa",
+        "indian",
+        "bengaluru"
+    ],
+    "indonesia": [
+        "indonesian",
+        "bali",
+        "jakarta",
+        "indonesia",
+        "tanah lot",
+        "borobudur"
+    ],
+    "iran": [
+        "tehran",
+        "isfahan",
+        "iran",
+        "mashhad",
+        "iranian"
+    ],
+    "iraq": [
+        "iraqi",
+        "baghdad",
+        "iraq",
+        "karbala"
+    ],
+    "israel": [
+        "israel",
+        "isra",
+        "sea of galile",
+        "tel aviv",
+        "jerusalem",
+        "western wal"
+    ],
+    "italy": [
+        "venic",
+        "milan",
+        "rome",
+        "itali",
+        "colosseum",
+        "italian"
+    ],
+    "ivory coast": [
+        "ivorian",
+        "abidjan",
+        "banco national park",
+        "basilica of our lady of peac",
+        "ivory coast",
+        " yamoussoukro"
+    ],
+    "jamaica": [
+        "jamaica",
+        "kingston",
+        "negril",
+        "dunn's river fal",
+        "jamaican",
+        "dolphin cove jamaica"
+    ],
+    "japan": [
+        "tokyo",
+        "kyoto",
+        "osaka",
+        "japanes",
+        "japan",
+        "mount fuji"
+    ],
+    "kazakhstan": [
+        "kazakhstani",
+        "ascension cathedr",
+        "bayterek",
+        "kazakhstan",
+        "almati",
+        "astana"
+    ],
+    "kenya": [
+        "lake nakuru",
+        "maasai mara",
+        "kenya",
+        "kenyan",
+        "nairobi",
+        "tsavo east national park"
+    ],
+    "latvia": [
+        "j\u5974rmala",
+        "riga",
+        "st. peter's church",
+        "latvia",
+        "latvian",
+        "freedom monu"
+    ],
+    "lebanon": [
+        "lebanes",
+        "lebanon",
+        "tripoli",
+        "jeita grotto",
+        "baalbek",
+        "beirut"
+    ],
+    "lithuania": [
+        "hill of cross",
+        "lithuanian",
+        "lithuania",
+        "vilnius",
+        "kauna"
+    ],
+    "malaysia": [
+        "kota kinabalu",
+        "malaysian",
+        "kuala lumpur",
+        "malaysia",
+        "mount kinabalu",
+        "petronas tow"
+    ],
+    "mexico": [
+        "mexico c",
+        "mexican",
+        "mexico",
+        "coba",
+        "xel\u9225\u6154a park",
+        "canc\u7164n"
+    ],
+    "morocco": [
+        "rabat",
+        "moroccan",
+        "morocco",
+        "jemaa el-fnaa",
+        "atlas mountain",
+        "marrakesh"
+    ],
+    "netherlands": [
+        "netherland",
+        "rijksmuseum",
+        "dutchwoman",
+        "maastricht",
+        "dutchman",
+        "dutch",
+        " rotterdam",
+        "amesterdam",
+        "dutchmen",
+        "dutchwomen"
+    ],
+    "new zealand": [
+        "milford sound",
+        "new zealand",
+        "tongariro national park",
+        "wellington",
+        "auckland"
+    ],
+    "nigeria": [
+        "nigeria",
+        "lago",
+        "abuja",
+        "nigerien",
+        "calabar"
+    ],
+    "northern ireland": [
+        "ulster museum",
+        "northern irishwomen",
+        "northern irish",
+        "belfast",
+        "derri",
+        "northern irishman",
+        "northern irishmen",
+        "northern irishwoman",
+        "northern ireland",
+        "ulster american folk park"
+    ],
+    "norway": [
+        "oslofjord",
+        "oslo",
+        "troms\u9176",
+        "norwegian",
+        "norway",
+        "bergen"
+    ],
+    "pakistan": [
+        "karachi",
+        "pakistan",
+        "peshawar",
+        "islamabad",
+        "lahor",
+        "pakistani"
+    ],
+    "paraguay": [
+        "casa de la independencia museum",
+        "paraguayan",
+        "asunci\u8d38n",
+        "ciudad del est",
+        "encarnaci\u8d38n",
+        "paraguay"
+    ],
+    "peru": [
+        "sacred valley",
+        "peruvian",
+        "cusco",
+        "peru",
+        " lima",
+        "machu picchu"
+    ],
+    "philippines": [
+        "philippin",
+        "chocolate hil",
+        "boracay",
+        "manila",
+        "filipino"
+    ],
+    "poland": [
+        "krak\u8d38w",
+        "wawel castl",
+        "poland",
+        "wieliczka salt min",
+        "pole",
+        "polish",
+        "warsaw"
+    ],
+    "portugal": [
+        "porto",
+        "bel\u8305m tow",
+        "portugues",
+        "jer\u8d38nimos monasteri",
+        "lisbon",
+        "portug"
+    ],
+    "puerto rico": [
+        "san juan",
+        "el yunque national forest",
+        "castillo san felipe del morro",
+        "puerto rican",
+        "puerto rico",
+        "old san juan"
+    ],
+    "republic of ireland": [
+        "irishmen",
+        "irish",
+        "galway",
+        "dublin",
+        "irishwoman",
+        "republic of ireland",
+        "irishwomen",
+        "cliffs of moh",
+        "ireland",
+        "cork",
+        "irishman"
+    ],
+    "romania": [
+        "bucharest",
+        "romania",
+        "bra\u846fov",
+        "romanian",
+        "cluj\u9225\u615bapoca",
+        "pele\u846f castl"
+    ],
+    "russia": [
+        "winter palac",
+        "moscow kremlin",
+        "moscow",
+        "saint petersburg",
+        "russian",
+        "russia"
+    ],
+    "saudi arabia": [
+        "mecca",
+        "saudi arabia",
+        "riydah",
+        "saudi arabian",
+        "saudi",
+        "jeddah"
+    ],
+    "scotland": [
+        "edinburgh",
+        "hmy britannia",
+        "scotland",
+        "scot",
+        "scottish",
+        "kelvingrove art gallery and museum",
+        "glasgow"
+    ],
+    "senegal": [
+        "sali",
+        "seneg",
+        "house of slav",
+        "senegales",
+        "dakar",
+        "lake retba"
+    ],
+    "serbia": [
+        "novi sad",
+        "serbia",
+        "church of saint sava",
+        "belgrade fortress",
+        "serb",
+        "serbian",
+        "belgrad"
+    ],
+    "singapore": [
+        "pulau ujong",
+        "singaporean",
+        "pulau ubin",
+        "singapor",
+        "sentosa",
+        "serangoon"
+    ],
+    "slovakia": [
+        "dev\u94c6n castl",
+        "spi\u62e7 castl",
+        "bratislava",
+        "slovak",
+        "tatra mountain",
+        "slovakia"
+    ],
+    "slovenia": [
+        "bled",
+        "slovenian",
+        "sloven",
+        "ljublijana",
+        "slovenia",
+        "lake bl"
+    ],
+    "south africa": [
+        "south african",
+        "table mountain",
+        "south africa",
+        "cape town",
+        "johannesburg",
+        "kruger national park"
+    ],
+    "south korea": [
+        "seoul",
+        "n seoul tow",
+        "gyeongbokgung",
+        "south korean",
+        "busan",
+        "south korea"
+    ],
+    "soviet union": [
+        "moscow",
+        "soviet",
+        "soviet union"
+    ],
+    "spain": [
+        "madrid",
+        "alhambra",
+        "barcelona",
+        "sagrada fam\u94c6lia",
+        "spanish",
+        "spaniard",
+        "spain"
+    ],
+    "sri lanka": [
+        "sigiriya",
+        "kandi",
+        "yala national park",
+        "colombo",
+        "sri lankan",
+        "sri lanka"
+    ],
+    "sweden": [
+        "swedish",
+        "vasa museum",
+        "sweden",
+        "stockholm",
+        "gamla stan",
+        "swede",
+        "gothenburg"
+    ],
+    "switzerland": [
+        "geneva",
+        "z\u7709rich",
+        "jungfraujoch",
+        "swiss",
+        "switzerland",
+        "swiss alp"
+    ],
+    "syria": [
+        "syria",
+        "aleppo",
+        "syrian",
+        "palmyra",
+        "damascus"
+    ],
+    "taiwan": [
+        "sun moon lak",
+        "taiwan",
+        "taipei",
+        "taichung"
+    ],
+    "thailand": [
+        "grand palac",
+        "wat phra kaew",
+        "bangkok",
+        "ko samui",
+        "thailand",
+        "thai"
+    ],
+    "tunisia": [
+        "great mosque of kairouan",
+        "tunisia",
+        "carthag",
+        "tunisian",
+        "djerba",
+        "tuni"
+    ],
+    "turkey": [
+        "turkey",
+        "istanbul",
+        "turkish",
+        "hagia sophia",
+        "ankara",
+        "turk",
+        "antalya"
+    ],
+    "uganda": [
+        "kampala",
+        "murchison falls national park",
+        "uganda",
+        "kazinga channel",
+        "ugandan",
+        "bwindi impenetrable national park"
+    ],
+    "ukraine": [
+        "kiev",
+        "ukrainian",
+        "ukrain",
+        "kiev pechersk lavra",
+        "saint sophia's cathedr",
+        "odessa"
+    ],
+    "united kingdom": [
+        "briton",
+        "liverpool",
+        "big ben",
+        "united kingdom",
+        "london",
+        "british",
+        "british museum"
+    ],
+    "united states of america": [
+        "statue of liberti",
+        "washington, d.c.",
+        "united states of america",
+        "american",
+        "new york",
+        "los angel"
+    ],
+    "uruguay": [
+        "sol\u94c6s theatr",
+        "punta del est",
+        "palacio salvo",
+        "uruguayan",
+        "uruguay",
+        "montevideo"
+    ],
+    "venezuela": [
+        "margarita island",
+        "playa el yaqu",
+        "morrocoy national park",
+        "venezuelan",
+        "venezuela",
+        "caraca"
+    ],
+    "vietnam": [
+        "ho\u813fn ki\u5cb7\u7e28 lak",
+        "ho chi minh c",
+        "hanoi",
+        "vietnames",
+        "vietnam",
+        "c\u5cc4?chi tunnel"
+    ],
+    "wales": [
+        "wale",
+        "welshwomen",
+        "snowdonia",
+        "welsh",
+        "welshwoman",
+        "swansea",
+        "welshmen",
+        "cardiff",
+        "welshman",
+        "snowdon"
+    ],
+    "yugoslavia": [
+        "zagreb",
+        "yugoslavia",
+        "diocletian's palac",
+        "hvar",
+        "yugoslav",
+        "belgrad"
+    ],
+    "zimbabwe": [
+        "bulawayo",
+        "harar",
+        "zimbabw",
+        "hwange national park",
+        "zimbabwean",
+        "victoria fal"
+    ]
+}

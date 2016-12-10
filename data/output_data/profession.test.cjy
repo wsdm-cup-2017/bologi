@@ -1,10 +1,10 @@
 Barack Obama	Politician	7
-Barack Obama	Lawyer	7
-Barack Obama	Law professor	3
+Barack Obama	Lawyer	4
+Barack Obama	Law professor	1
 Barack Obama	Author	0
-William Shakespeare	Poet	2
+William Shakespeare	Poet	5
 William Shakespeare	Playwright	7
-William Shakespeare	Lyricist	1
+William Shakespeare	Lyricist	0
 William Shakespeare	Author	0
 George W. Bush	Public speaker	7
 George W. Bush	Politician	4
@@ -13,7 +13,7 @@ George W. Bush	Businessperson	0
 George W. Bush	Author	0
 Napoleon	Politician	7
 Napoleon	Military Officer	7
-Carl Linnaeus	Physician	6
+Carl Linnaeus	Physician	7
 Carl Linnaeus	Botanist	7
 Carl Linnaeus	Biologist	0
 Bill Clinton	Teacher	0
@@ -21,26 +21,26 @@ Bill Clinton	Statesman	0
 Bill Clinton	Lawyer	7
 Bill Clinton	Author	0
 Wolfgang Amadeus Mozart	Violist	7
-Wolfgang Amadeus Mozart	Violinist	3
+Wolfgang Amadeus Mozart	Violinist	1
 Wolfgang Amadeus Mozart	Pianist	0
-Wolfgang Amadeus Mozart	Composer	5
-Johann Sebastian Bach	Violist	5
-Johann Sebastian Bach	Violinist	7
+Wolfgang Amadeus Mozart	Composer	7
+Johann Sebastian Bach	Violist	2
+Johann Sebastian Bach	Violinist	6
 Johann Sebastian Bach	Teacher	0
-Johann Sebastian Bach	Organist	5
-Johann Sebastian Bach	Harpsichordist	2
+Johann Sebastian Bach	Organist	2
+Johann Sebastian Bach	Harpsichordist	1
 Johann Sebastian Bach	Composer	7
-Johann Sebastian Bach	Cantor	6
-Bob Dylan	Singer-songwriter	1
+Johann Sebastian Bach	Cantor	2
+Bob Dylan	Singer-songwriter	3
 Bob Dylan	Record producer	1
 Bob Dylan	Poet	0
 Bob Dylan	Peace activist	0
-Bob Dylan	Lyricist	3
-Bob Dylan	Guitarist	7
+Bob Dylan	Lyricist	2
+Bob Dylan	Guitarist	6
 Bob Dylan	Film Score Composer	1
-Bob Dylan	Disc jockey	5
+Bob Dylan	Disc jockey	7
 Bob Dylan	Author	0
-Bob Dylan	Actor	0
+Bob Dylan	Actor	1
 John F. Kennedy	Politician	7
 John F. Kennedy	Military Officer	0
 John F. Kennedy	Author	0
@@ -53,88 +53,88 @@ Aristotle	Teacher	0
 Aristotle	Scientist	7
 Aristotle	Polymath	1
 Aristotle	Philosopher	7
-Paul McCartney	Songwriter	4
+Paul McCartney	Songwriter	7
 Paul McCartney	Social activist	0
-Paul McCartney	Singer-songwriter	0
-Paul McCartney	Record producer	1
+Paul McCartney	Singer-songwriter	5
+Paul McCartney	Record producer	0
 Paul McCartney	Poet	0
 Paul McCartney	Pianist	1
 Paul McCartney	Peace activist	0
-Paul McCartney	Multi-instrumentalist	7
-Paul McCartney	Keyboard player	6
-Paul McCartney	Guitarist	5
+Paul McCartney	Multi-instrumentalist	3
+Paul McCartney	Keyboard player	3
+Paul McCartney	Guitarist	3
 Paul McCartney	Film Score Composer	1
 Paul McCartney	Film Producer	0
-Paul McCartney	Entrepreneur	1
-Paul McCartney	Drummer	5
+Paul McCartney	Entrepreneur	0
+Paul McCartney	Drummer	3
 Paul McCartney	Businessperson	0
-Paul McCartney	Bassist	3
+Paul McCartney	Bassist	4
 Julius Caesar	Politician	7
 Julius Caesar	Author	0
-Theodore Roosevelt	Statesman	2
-Theodore Roosevelt	Polymath	2
+Theodore Roosevelt	Statesman	1
+Theodore Roosevelt	Polymath	1
 Theodore Roosevelt	Police officer	2
-Theodore Roosevelt	Historian	0
+Theodore Roosevelt	Historian	1
 Theodore Roosevelt	Conservationist	7
 Theodore Roosevelt	Author	0
-Walt Disney	Voice Actor	4
-Walt Disney	Television Producer	1
-Walt Disney	Screenwriter	7
-Walt Disney	Film Producer	7
-Walt Disney	Film Editor	6
+Walt Disney	Voice Actor	2
+Walt Disney	Television Producer	0
+Walt Disney	Screenwriter	6
+Walt Disney	Film Producer	5
+Walt Disney	Film Editor	1
 Walt Disney	Film Director	0
-Walt Disney	Entrepreneur	4
-Walt Disney	Entertainer	2
-Walt Disney	Businessperson	2
+Walt Disney	Entrepreneur	0
+Walt Disney	Entertainer	0
+Walt Disney	Businessperson	0
 Walt Disney	Animator	7
-Walt Disney	Actor	1
+Walt Disney	Actor	3
 Jimmy Carter	Statesman	0
-Jimmy Carter	Novelist	1
-Jimmy Carter	Military Officer	1
+Jimmy Carter	Novelist	0
+Jimmy Carter	Military Officer	0
 Jimmy Carter	Farmer	7
-Jimmy Carter	Author	0
-Lady Gaga	Social activist	7
-Lady Gaga	Singer-songwriter	0
-Lady Gaga	Record producer	4
-Lady Gaga	Fashion Designer	6
-Lady Gaga	Businessperson	1
-Lady Gaga	Actor	4
+Jimmy Carter	Author	1
+Lady Gaga	Social activist	3
+Lady Gaga	Singer-songwriter	7
+Lady Gaga	Record producer	5
+Lady Gaga	Fashion Designer	1
+Lady Gaga	Businessperson	0
+Lady Gaga	Actor	7
 Albert Einstein	Theoretical Physicist	7
 Albert Einstein	Teacher	0
 Albert Einstein	Philosopher	0
-Albert Einstein	Mathematician	2
+Albert Einstein	Mathematician	1
 Albert Einstein	Author	0
-Stevie Wonder	Singer-songwriter	0
+Stevie Wonder	Singer-songwriter	2
 Stevie Wonder	Record producer	1
-Stevie Wonder	Pianist	0
-Stevie Wonder	Organist	1
+Stevie Wonder	Pianist	1
+Stevie Wonder	Organist	0
 Stevie Wonder	Multi-instrumentalist	7
 Stevie Wonder	Lyricist	3
 Stevie Wonder	Keyboard player	6
-Stevie Wonder	Film Score Composer	1
-Stevie Wonder	Film Producer	0
-Stevie Wonder	Drummer	5
+Stevie Wonder	Film Score Composer	0
+Stevie Wonder	Film Producer	7
+Stevie Wonder	Drummer	4
 Stevie Wonder	Actor	0
 Frank Zappa	Songwriter	7
 Frank Zappa	Record producer	1
-Frank Zappa	Conductor	3
+Frank Zappa	Conductor	1
 Frank Zappa	Composer	0
 Neil Young	Songwriter	7
 Neil Young	Screenwriter	0
-Neil Young	Record producer	1
+Neil Young	Record producer	2
 Neil Young	Film Score Composer	1
 Neil Young	Film Producer	0
-Neil Young	Film Director	1
+Neil Young	Film Director	0
 Neil Young	Actor	0
 Neil Young	Activist	0
-Alfred Hitchcock	Television Producer	2
-Alfred Hitchcock	Television director	6
+Alfred Hitchcock	Television Producer	0
+Alfred Hitchcock	Television director	1
 Alfred Hitchcock	Screenwriter	0
-Alfred Hitchcock	Film Producer	1
+Alfred Hitchcock	Film Producer	4
 Alfred Hitchcock	Film Director	7
-Alfred Hitchcock	Film Art Director	5
-Alfred Hitchcock	Actor	4
-Marvin Gaye	Singer-songwriter	0
+Alfred Hitchcock	Film Art Director	2
+Alfred Hitchcock	Actor	2
+Marvin Gaye	Singer-songwriter	4
 Marvin Gaye	Record producer	1
 Marvin Gaye	Keyboard player	7
 Marvin Gaye	Film Score Composer	0
@@ -142,59 +142,59 @@ Luke the Evangelist	Writer	7
 Luke the Evangelist	Physician	0
 Justin Timberlake	Television Producer	7
 Justin Timberlake	Singer-songwriter	0
-Justin Timberlake	Record producer	2
+Justin Timberlake	Record producer	4
 Justin Timberlake	Film Producer	0
-Justin Timberlake	Dancer	5
+Justin Timberlake	Dancer	4
 Justin Timberlake	Businessperson	0
-Justin Timberlake	Actor	2
+Justin Timberlake	Actor	4
 Bertolt Brecht	Theatre Director	7
 Bertolt Brecht	Screenwriter	0
 Bertolt Brecht	Poet	0
-Bertolt Brecht	Playwright	2
-Bertolt Brecht	Lyricist	3
+Bertolt Brecht	Playwright	4
+Bertolt Brecht	Lyricist	1
 Bertolt Brecht	Librettist	1
 James Cook	Sailor	7
 James Cook	Explorer	7
-Tupac Shakur	Songwriter	6
+Tupac Shakur	Songwriter	5
 Tupac Shakur	Social activist	1
-Tupac Shakur	Record producer	4
+Tupac Shakur	Record producer	3
 Tupac Shakur	Rapper	7
 Tupac Shakur	Poet	0
 Tupac Shakur	Dancer	1
 Tupac Shakur	Actor	1
-Missy Elliott	Singer-songwriter	1
-Missy Elliott	Record producer	5
+Missy Elliott	Singer-songwriter	2
+Missy Elliott	Record producer	3
 Missy Elliott	Rapper	7
-Missy Elliott	Dancer	1
+Missy Elliott	Dancer	0
 Missy Elliott	Actor	0
-Samuel Taylor Coleridge	Poet	0
+Samuel Taylor Coleridge	Poet	4
 Samuel Taylor Coleridge	Philosopher	7
-Samuel Taylor Coleridge	Critic	2
-Billy Joel	Singer-songwriter	1
-Billy Joel	Pianist	3
-Billy Joel	Orchestrator	2
-Billy Joel	Lyricist	7
+Samuel Taylor Coleridge	Critic	0
+Billy Joel	Singer-songwriter	2
+Billy Joel	Pianist	7
+Billy Joel	Orchestrator	1
+Billy Joel	Lyricist	3
 Billy Joel	Composer	0
-Billy Joel	Businessperson	1
+Billy Joel	Businessperson	0
 Miley Cyrus	Singer-songwriter	0
 Miley Cyrus	Model	7
-Miley Cyrus	Dancer	6
+Miley Cyrus	Dancer	1
 Miley Cyrus	Actor	7
 Geoffrey Chaucer	Poet	0
-Geoffrey Chaucer	Philosopher	2
+Geoffrey Chaucer	Philosopher	1
 Geoffrey Chaucer	Diplomat	0
-Geoffrey Chaucer	Bureaucrat	5
+Geoffrey Chaucer	Bureaucrat	1
 Geoffrey Chaucer	Author	7
 Geoffrey Chaucer	Astrologer	0
-Bryan Adams	Social activist	2
-Bryan Adams	Singer-songwriter	0
-Bryan Adams	Record producer	2
-Bryan Adams	Photographer	5
-Bryan Adams	Film Score Composer	7
-Bryan Adams	Actor	5
+Bryan Adams	Social activist	7
+Bryan Adams	Singer-songwriter	1
+Bryan Adams	Record producer	0
+Bryan Adams	Photographer	1
+Bryan Adams	Film Score Composer	1
+Bryan Adams	Actor	1
 Tacitus	Writer	7
 Tacitus	Historian	7
-Ben Jonson	Poet	2
+Ben Jonson	Poet	3
 Ben Jonson	Playwright	7
 Ben Jonson	Actor	0
 Paul Newman	Voice Actor	7

@@ -14,19 +14,10 @@ import random
 
 from collections import OrderedDict, defaultdict
 from sklearn.feature_extraction.text import CountVectorizer
+from nltk.stem import SnowballStemmer
 import pprint
 
-# >>> from nltk.stem import SnowballStemmer
-# >>> print(" ".join(SnowballStemmer.languages)) # See which languages are supported
-# danish dutch english finnish french german hungarian
-# italian norwegian porter portuguese romanian russian
-# spanish swedish
-# >>> stemmer = SnowballStemmer("german") # Choose a language
-# >>> stemmer.stem("Autobahnen") # Stem a word
-# 'autobahn'
-# import warnings
-# warnings.filterwarnings('error')
-
+stemmer = SnowballStemmer("english")
 class OrderedDefaultDict(OrderedDict, defaultdict):
     def __init__(self, default_factory=None, *args, **kwargs):
         #in python3 you can omit the args to super
@@ -115,10 +106,14 @@ def count_score_from_table_for_one_person(attr_score, table_dic, sentences):
   # one pass to accumulate word frequency
   for sentence in sentences:
     tokens = CountVectorizer(strip_accents='Unicode', lowercase=True).build_tokenizer()(sentence)
-    # print tokens, sentence
-    # exit(12)
-    for word in tokens:
+    # sentence.lower().split()
 
+    for word in tokens:
+      try:
+        word = stemmer.stem(word) # will throw error for some unicode
+      except:
+        tmp = 1
+      #   print "Cannot stem: ", word
       for i in range(n):
         relevant_words = relevant_words_pool[i]
         if relevant_words is None:
@@ -128,25 +123,19 @@ def count_score_from_table_for_one_person(attr_score, table_dic, sentences):
             # UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
             attr = attr_score.items()[i][0]
             attr_score[attr] += 1
-          # print "Score!!", attr, ori_score
         except:
           print "[word not in relevant] word: ", word
-              # cjycjy: error for nation, never match, never enter this branch
-    # except:
-        # print "[count_score_from_table_for_one_person]relevant_words: error word: ", word
+
   attr_score = normalize(attr_score)
 
 
 # new add 12.8
 def cal_score_from_dict_and_table(in_path, name2sentences, table_path, dict_triple):
-  print "[cal_score_from_dict_and_table]"
-  # name_attr =  store_input_file_as_df(in_path)
   attr_table = load_json(table_path)
-  # print attr_table.keys()
 
   for name, attr_score in dict_triple.iteritems():
       triple_ct = len(attr_score)
-      name_key = name#!!!OK??.encode("utf-8") # because stored as unicode string before by pandas
+      name_key = name#!!No need can pass.encode("utf-8") # because stored as unicode string before by pandas
       # check if name contains (specifier as hint to answer)
       for attr in attr_score.keys():
         if match_name_attr(name, attr) is True:
