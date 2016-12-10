@@ -110,16 +110,18 @@ def count_score_from_table_for_one_person(attr_score, table_dic, sentences):
 
     for word in tokens:
       try:
-        word = stemmer.stem(word) # will throw error for some unicode
+        stemmed_word = stemmer.stem(word) # will throw error for some unicode
       except:
         tmp = 1
+        continue
       #   print "Cannot stem: ", word
+
       for i in range(n):
         relevant_words = relevant_words_pool[i]
         if relevant_words is None:
           continue
         try:
-          if word in relevant_words: #/home/bologi/bologi/src/cjy_predict.py:99:
+          if word in relevant_words or stemmed_word in relevant_words: #/home/bologi/bologi/src/cjy_predict.py:99:
             # UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
             attr = attr_score.items()[i][0]
             attr_score[attr] += 1
