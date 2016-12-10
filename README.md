@@ -1,5 +1,5 @@
 # bologi
-The Bologi Triple Scorer
+The Bologi Triple Scorer 2017
 
 # resrc
 - on vm, data already located at
@@ -8,17 +8,15 @@ The Bologi Triple Scorer
 
 - download datas as zip:
 	'curl http://broccoli.cs.uni-freiburg.de/wsdm-cup-2017/triple-scoring.zip -o <output path such as ./data/war_data/wiki-sentences>'
-- to create smaller sample wiki file for testing:
-	'head -n[#lines desired] [filepath]'
+
+- for testing, simply run the script to run and eval:
+  run 'source ./src/test.sh [#tuples to test] [profession/nationality] [vm/dev]'
 
 # usage:
 0. data
 - make sure you have wiki file downloaded, placed under ./data/raw_data
 - restore'data/intermediate_data/' as following:
-
-name2sentence                   nameToSentences.json    td_labeled.json
-name_sentence_dict.json         nation_words_table.txt
-name_sentence_dict_nation.json  prof_words_table.txt
+		name2sentenc   nationality_words_table.txt      profession_words_table.txt
 
 1. on first use, create name2sentence dictionaries:
 'python2 ./src/cjy_dict_generator.py'
@@ -41,7 +39,7 @@ u'Vilen K\xc3\xbcnnapu'
 
 key is 'Vilen K\xc3\x83\xc2\xbcnnapu'
 
-# wiki path on vm
+# wiki data path on vm
 "/media/training-datasets/triple-scoring/wsdmcup17-triple-scoring-training-dataset-2016-09-16/wiki-sentences"
 
 ## word2vec

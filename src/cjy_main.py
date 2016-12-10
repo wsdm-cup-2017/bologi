@@ -7,11 +7,7 @@ import numpy as np
 import pandas as pd
 import numpy as np
 import pandas as pd
-from cjy_predict import predice_train_file_job_using_dict
-from cjy_predict import predice_train_file_nation_using_dict
-# from Predict import Predice_train_file_nation
-# from Predict import write_test_sentences_to_file
-
+from cjy_predict import predice_triple_using_dict
 
 if __name__=='__main__':
     # Parse command line arguments.
@@ -32,10 +28,11 @@ if __name__=='__main__':
         opath  = outpath +'/' + names[-1]
 #        write_test_sentences_to_file(path)
         if type_name=="profession":
-            print "predict profession"
-            predice_train_file_job_using_dict(path, opath)
-        else:
-        # if type_name== "nationality":
-            print "predict nationality"
-            predice_train_file_nation_using_dict(path, opath)
+            print "=> predicting profession..."
+            table_path = "../data/intermediate_data/" + type_name +"_words_table.txt"
+            predice_triple_using_dict(path, opath, table_path)
+        elif type_name== "nationality":
+            print "=> predicting nationality..."
+            table_path = "../data/intermediate_data/" + type_name +"_words_table.txt"
+            predice_triple_using_dict(path, opath, table_path)
 
