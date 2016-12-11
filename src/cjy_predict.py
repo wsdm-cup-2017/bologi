@@ -11,6 +11,7 @@ import sys
 import os
 import pickle
 import random
+import math
 
 from collections import OrderedDict, defaultdict
 from sklearn.feature_extraction.text import CountVectorizer
@@ -66,29 +67,44 @@ def normalize(s):
     return s
 
 
-def maxto7(df, starti, endi):
-    maxi = starti
+def maxto7(attr_score_dic):
+    maxi = 0
     maxs = 0
-    for i in range(starti, endi):
-        score = df.loc[i]['score']
-        if score > maxs:
-            maxs = score
-            maxi = i
-    df.loc[maxi,'score'] = 7
+    for i in range(len(attr_score_dic)):
+      score = attr_score_dic.values()[i]
+      if score >= maxs:
+        maxs = score
+        maxi = i
+
+    i = 0
+    for attr, _ in attr_score_dic.iteritems():
+      if i == maxi:
+        attr_score_dic[attr] = 7
+        print "MAX  ", attr
+        break
+      else:
+        i += 1
     return
+
 
 def match_name_attr(s, attr):
   content_in_bracket = s[s.find("(")+1:s.find(")")].lower()
   if content_in_bracket is None:
-    return False
+    return 0.0
   else:
     if content_in_bracket == attr.lower():
-      return True
+      return 7.0
 
-    tokens = content_in_bracket
-    if attr.lower() in tokens:
-      return True
-  return False
+    # print content_in_bracket.encode('utf-8'), type(content_in_bracket)
+    tokens_bracket = content_in_bracket.encode('utf-8').split()
+    tokens_attr = attr.lower().split()
+
+    match_ct = 0
+    for t_bracket in tokens_bracket:
+      if t_bracket in tokens_attr:
+        match_ct += 1
+        # print "match ", attr, "&", t_bracket, "=>",match_ct
+  return float(match_ct)/len(t_bracket)*7
 
 def count_score_from_table_for_one_person(attr_score, table_dic, sentences):
   n = len(attr_score)
@@ -113,7 +129,6 @@ def count_score_from_table_for_one_person(attr_score, table_dic, sentences):
         stemmed_word = stemmer.stem(word) # will throw error for some unicode
       except:
         tmp = 1
-        continue
       #   print "Cannot stem: ", word
 
       for i in range(n):
@@ -138,10 +153,6 @@ def cal_score_from_dict_and_table(in_path, name2sentences, table_path, dict_trip
   for name, attr_score in dict_triple.iteritems():
       triple_ct = len(attr_score)
       name_key = name#!!No need can pass.encode("utf-8") # because stored as unicode string before by pandas
-      # check if name contains (specifier as hint to answer)
-      for attr in attr_score.keys():
-        if match_name_attr(name, attr) is True:
-          attr_score[attr] = 7
 
       if name_key not in name2sentences:
           # print "=> Not Found: [", name,"]"
@@ -162,7 +173,10 @@ def predice_triple_using_dict(nation_path, nation_result_path, table_path):
     s1 = pd.read_csv(nation_path, names = ['name' , 'attribute' , 'score'] , sep = '\t', encoding = 'utf-8')
     df_in = DataFrame(s1)
     for index, row in df_in.iterrows():
-        dict_triple[row['name']][row['attribute']] = 1
+        # check if name contains (specifier as hint to answer)
+        # print  row['name']
+        init_score = match_name_attr(row['name'], row['attribute'])
+        dict_triple[row['name']][row['attribute']] = init_score
 
     # load sub-dictionary one by one, used to look up for wiki-sentences
     name2sentences = None
@@ -182,13 +196,18 @@ def predice_triple_using_dict(nation_path, nation_result_path, table_path):
       cal_score_from_dict_and_table(nation_path, name2sentences, table_path, dict_triple)
 
     # store result to file
+
+    for _, job_score_pair in dict_triple.iteritems():
+        # round the highest score to 7 for each person
+        maxto7(job_score_pair)
+
     i = 0
     for name, job_score_pair in dict_triple.iteritems():
         for job, score in job_score_pair.iteritems():
-            df_out.loc[i] = [name, job, score]
+            df_out.loc[i] = [name, job, round(score)]
             i += 1
         # round the highest score to 7 for each person
-        maxto7(df_out, i-len(job_score_pair), i-1)
+        # maxto7(df_out, i-len(job_score_pair), i-1)
     df_out[['score']] = df_out[['score']].astype(int)
     df_out.set_index(keys = ['name'] , inplace = True)
     df_out.to_csv(nation_result_path, header=None, sep = '\t', encoding='utf-8')
