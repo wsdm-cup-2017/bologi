@@ -18,12 +18,20 @@ if __name__=='__main__':
     r.add_argument("-o", help="predicted results.", required=True)
     r.add_argument("--stem", type=int, choices=[0, 1],
                     help="choose which version of table to use")
+    # for testing optimal baseline
+    r.add_argument("--baseline", type=float,
+                    help="idx for baselines for nationality")
 
     args = vars(parser.parse_args())
     if args['stem'] == 0:
         table_path_prefix = "../data/intermediate_data/old_"
     else:
         table_path_prefix = "../data/intermediate_data/"
+
+    if args['baseline'] is None:
+        baseline = 5.5
+    else:
+        baseline = args['baseline']
 
     print "Use table w/ prefix: ", table_path_prefix
     infiles = args["i"]
@@ -37,11 +45,12 @@ if __name__=='__main__':
         opath  = outpath +'/' + names[-1]
 #        write_test_sentences_to_file(path)
         if type_name=="profession":
+            baseline = 2.0
             print "=> predicting profession.."
             table_path = table_path_prefix + type_name +"_words_table.txt"
-            predice_triple_using_dict(path, opath, table_path)
+            predice_triple_using_dict(path, opath, table_path, baseline = baseline)
         elif type_name== "nationality":
             print "=> predicting nationality..."
             table_path = table_path_prefix + type_name +"_words_table.txt"
-            predice_triple_using_dict(path, opath, table_path)
+            predice_triple_using_dict(path, opath, table_path, baseline = baseline)
 

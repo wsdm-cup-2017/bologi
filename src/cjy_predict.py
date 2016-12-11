@@ -49,21 +49,14 @@ def store_input_file_as_df(path):
 # map frequency count to score [0-7]
 # input a dictionary, score as val
 def normalize(s):
-    minv=min(s.itervalues())
+    # minv=min(s.itervalues())
     maxv=max(s.itervalues())
 
-    if minv==maxv :
-        score=7
-        if minv==0:
-            score=0
-        for k in s:
-            s[k]= score
-        return s
-
-    factor =float(7)/(maxv-minv)
     for k in s:
-        s[k]=int(round(((s[k])-minv)*factor))
-
+      try:
+        s[k] = float(s[k]) / maxv * 7
+      except:
+        print "type(maxv) ", maxv
     return s
 
 
@@ -80,17 +73,18 @@ def maxto7(attr_score_dic):
     for attr, _ in attr_score_dic.iteritems():
       if i == maxi:
         attr_score_dic[attr] = 7
-        print "MAX  ", attr
+        # print "MAX  ", attr
         break
       else:
         i += 1
     return
 
 
-def match_name_attr(s, attr):
+def match_name_attr(s, attr, baseline):
   content_in_bracket = s[s.find("(")+1:s.find(")")].lower()
+
   if content_in_bracket is None:
-    return 0.0
+    return baseline
   else:
     if content_in_bracket == attr.lower():
       return 7.0
@@ -104,7 +98,9 @@ def match_name_attr(s, attr):
       if t_bracket in tokens_attr:
         match_ct += 1
         # print "match ", attr, "&", t_bracket, "=>",match_ct
-  return float(match_ct)/len(t_bracket)*7
+    init_score = max(baseline, float(match_ct)/len(t_bracket)*7)
+    # print "[match name attr], init score", init_score
+  return init_score
 
 def count_score_from_table_for_one_person(attr_score, table_dic, sentences):
   n = len(attr_score)
@@ -139,7 +135,7 @@ def count_score_from_table_for_one_person(attr_score, table_dic, sentences):
           if word in relevant_words or stemmed_word in relevant_words: #/home/bologi/bologi/src/cjy_predict.py:99:
             # UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
             attr = attr_score.items()[i][0]
-            attr_score[attr] += 1
+            attr_score[attr] += 1.0
         except:
           print "[word not in relevant] word: ", word
 
@@ -164,18 +160,18 @@ def cal_score_from_dict_and_table(in_path, name2sentences, table_path, dict_trip
   return
 
 
-def predice_triple_using_dict(nation_path, nation_result_path, table_path):
+def predice_triple_using_dict(input_path, output_path, table_path, baseline):
     # dict to store prediction result, while keeping original order w/ input
     dict_triple = OrderedDefaultDict(OrderedDefaultDict)
     df_out = pd.DataFrame(columns = ['name','job', 'score'])
 
     # read in pair file, init guess to be 1
-    s1 = pd.read_csv(nation_path, names = ['name' , 'attribute' , 'score'] , sep = '\t', encoding = 'utf-8')
+    s1 = pd.read_csv(input_path, names = ['name' , 'attribute' , 'score'] , sep = '\t', encoding = 'utf-8')
     df_in = DataFrame(s1)
     for index, row in df_in.iterrows():
         # check if name contains (specifier as hint to answer)
         # print  row['name']
-        init_score = match_name_attr(row['name'], row['attribute'])
+        init_score = match_name_attr(row['name'], row['attribute'], baseline)
         dict_triple[row['name']][row['attribute']] = init_score
 
     # load sub-dictionary one by one, used to look up for wiki-sentences
@@ -193,7 +189,7 @@ def predice_triple_using_dict(nation_path, nation_result_path, table_path):
       del name2sentences
       name2sentences = load_dict(prefix, chr(lowb), chr(highb))
       # predict
-      cal_score_from_dict_and_table(nation_path, name2sentences, table_path, dict_triple)
+      cal_score_from_dict_and_table(input_path, name2sentences, table_path, dict_triple)
 
     # store result to file
 
@@ -210,4 +206,4 @@ def predice_triple_using_dict(nation_path, nation_result_path, table_path):
         # maxto7(df_out, i-len(job_score_pair), i-1)
     df_out[['score']] = df_out[['score']].astype(int)
     df_out.set_index(keys = ['name'] , inplace = True)
-    df_out.to_csv(nation_result_path, header=None, sep = '\t', encoding='utf-8')
+    df_out.to_csv(output_path, header=None, sep = '\t', encoding='utf-8')
