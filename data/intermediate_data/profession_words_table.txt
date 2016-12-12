@@ -259,11 +259,9 @@
         "mazzocchi"
     ],
     "actor": [
-        "movi",
-        "woodi",
+        "movie",
         "fiendish",
         "actress",
-        "kong",
         "gang",
         "woody",
         "hustler",
@@ -271,7 +269,6 @@
         "bellick",
         "quilti",
         "panther",
-        "lilli",
         "royal",
         "boulting",
         "phares",
@@ -279,7 +276,6 @@
         "quilty",
         "hombr",
         "lilly",
-        "hannah",
         "goon",
         "newman",
         "world",

@@ -1,9 +1,8 @@
 #!/usr/bin/env python2
 # -*- coding: UTF-8 -*-
-import numpy as np
 import pandas as pd
 from pandas import DataFrame
-# from pandas import Series
+
 import ast
 import json
 import re
@@ -11,12 +10,11 @@ import sys
 import os
 import pickle
 import random
-import math
 
 from collections import OrderedDict, defaultdict
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.stem import SnowballStemmer
-import pprint
+# import pprint
 
 stemmer = SnowballStemmer("english")
 class OrderedDefaultDict(OrderedDict, defaultdict):
@@ -46,10 +44,9 @@ def store_input_file_as_df(path):
     pairs = pairs.reset_index(drop=True)
     return pairs
 
-# map frequency count to score [0-7]
+# linear mapping frequency count to score [0-7]
 # input a dictionary, score as val
 def normalize(s):
-    # minv=min(s.itervalues())
     maxv=max(s.itervalues())
 
     for k in s:
@@ -97,9 +94,8 @@ def match_name_attr(s, attr, baseline):
     for t_bracket in tokens_bracket:
       if t_bracket in tokens_attr:
         match_ct += 1
-        # print "match ", attr, "&", t_bracket, "=>",match_ct
+
     init_score = max(baseline, float(match_ct)/len(t_bracket)*7)
-    # print "[match name attr], init score", init_score
   return init_score
 
 def count_score_from_table_for_one_person(attr_score, table_dic, sentences):
@@ -125,7 +121,7 @@ def count_score_from_table_for_one_person(attr_score, table_dic, sentences):
         stemmed_word = stemmer.stem(word) # will throw error for some unicode
       except:
         tmp = 1
-      #   print "Cannot stem: ", word
+        # print "Cannot stem: ", word
 
       for i in range(n):
         relevant_words = relevant_words_pool[i]
@@ -154,8 +150,7 @@ def cal_score_from_dict_and_table(in_path, name2sentences, table_path, dict_trip
           # print "=> Not Found: [", name,"]"
           continue
       sentences = name2sentences[name_key]
-      # else:
-      #     print "==> :)))) Found: ", name
+
       count_score_from_table_for_one_person(attr_score, attr_table, sentences)
   return
 
@@ -170,7 +165,6 @@ def predice_triple_using_dict(input_path, output_path, table_path, baseline):
     df_in = DataFrame(s1)
     for index, row in df_in.iterrows():
         # check if name contains (specifier as hint to answer)
-        # print  row['name']
         init_score = match_name_attr(row['name'], row['attribute'], baseline)
         dict_triple[row['name']][row['attribute']] = init_score
 
@@ -178,7 +172,7 @@ def predice_triple_using_dict(input_path, output_path, table_path, baseline):
     name2sentences = None
     intervals = [ord('a'), ord('d'), ord('g'), ord('j'), ord('n'), ord('r'), ord('u')]
     for i in range(len(intervals)):
-      print "[predice_triple_using_dict]: Round", i, "/", len(intervals),"\n"
+      print "[predice_triple_using_dict]: Round", i, "/", len(intervals), "..."
       is_last_interval = i + 1 == len(intervals)
       lowb = intervals[0] if is_last_interval else intervals[i]
       highb = intervals[i] if is_last_interval else intervals[i+1]
@@ -192,7 +186,6 @@ def predice_triple_using_dict(input_path, output_path, table_path, baseline):
       cal_score_from_dict_and_table(input_path, name2sentences, table_path, dict_triple)
 
     # store result to file
-
     for _, job_score_pair in dict_triple.iteritems():
         # round the highest score to 7 for each person
         maxto7(job_score_pair)
@@ -202,8 +195,7 @@ def predice_triple_using_dict(input_path, output_path, table_path, baseline):
         for job, score in job_score_pair.iteritems():
             df_out.loc[i] = [name, job, round(score)]
             i += 1
-        # round the highest score to 7 for each person
-        # maxto7(df_out, i-len(job_score_pair), i-1)
+
     df_out[['score']] = df_out[['score']].astype(int)
     df_out.set_index(keys = ['name'] , inplace = True)
     df_out.to_csv(output_path, header=None, sep = '\t', encoding='utf-8')

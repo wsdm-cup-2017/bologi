@@ -20,9 +20,15 @@ if __name__=='__main__':
 			# center = stemmer.stem(center)
 
 			for i in range(len(words)):
-				stem_word = stemmer.stem(words[i])
-				new_obj[center].add(words[i])
-				new_obj[center].add(stem_word)
+				for token in words[i].split():
+					# stem_token = stemmer.stem(token)
+					# new_obj[center].add(stem_token)
+					new_obj[center].add(token)
+
+			for noise in ["of", "and"]:
+				if noise in new_obj[center]:
+					new_obj[center].remove(noise)
+
 			new_obj[center] = list(new_obj[center])
 
 		with open("../data/intermediate_data/" + type_name +"_words_table.txt",'w') as f:

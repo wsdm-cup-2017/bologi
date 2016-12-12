@@ -65,16 +65,17 @@ def load_dict(dict_prefix, lowb, highb):
 if __name__=='__main__':
   dict_len = 0
 
-  # wiki_path =  "../data/raw_data/wiki-sentences" #"../data/raw_data/sample"
-  wiki_path = "/media/training-datasets/triple-scoring/wsdmcup17-triple-scoring-training-dataset-2016-09-16/wiki-sentences"#"../data/raw_data/wiki-sentences"
+  # wiki_path =  "../data/raw_data/wiki-sentences"
+  wiki_path = "../data/raw_data/sample"
+  # wiki_path = "/media/training-datasets/triple-scoring/wsdmcup17-triple-scoring-training-dataset-2016-09-16/wiki-sentences"#"../data/raw_data/wiki-sentences"
 
   # [Memo] sub-dict len1: 93897; len2: 63948, len3: 50037, len4: 77394, len5: 83419, len6:24056
   # save dicts into several sub-dicts, split based on lower-cased first letter of key
   # TODO: adjust the number of splits to optimize performance
   intervals = [ord('a'), ord('d'), ord('g'), ord('j'), ord('n'), ord('r'), ord('u')]
   name2sentence = None
-
-  for i in range(4,len(intervals)):
+#generated part 2
+  for i in range(1,len(intervals)):
     is_last_interval = i + 1 == len(intervals)
     lowb = intervals[0] if is_last_interval else intervals[i]
     highb = intervals[i] if is_last_interval else intervals[i+1]
